@@ -11,6 +11,20 @@
     width: 30px;
 }
 
+.column {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media screen and (max-width:800px) {
+    .column {
+        display: grid;
+    }
+}
+
 @media screen and (max-width:500px) {
     .geneplore {
         width: 290px;
