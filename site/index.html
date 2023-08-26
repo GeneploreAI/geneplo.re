@@ -4,32 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="/site/css/home.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
     <title>Geneplore AI</title>
-    <link rel="icon" type="image/x-icon" href="static/img/small_logo.png">
 </head>
 
 <body style="height: 1000px;" class="bg-#F5F5F5 dark:bg-gray-900">
     <header class="bg-white dark:bg-gray-900">
-        <nav
-            class="navbar bg-white dark:bg-gray-900 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+        <nav class="navbar bg-white dark:bg-gray-900 w-full top-0 left-0 border-b border-gray-200 dark:border-gray-600">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
                 style="margin-top: -15px;">
-                <a href="index.html" class="flex items-center logo">
-                    <img class="geneplore" src="static/img/geneplore.png" alt="logo">
+                <a href="home.html" class="flex items-center logo">
+                    <img class="geneplore" src="/img/geneplore.png" alt="logo">
                 </a>
                 <div class="flex md:order-2 gap-2">
                     <div class="gap-2 flex items-center">
-                        <a href="https://discord.gg/geneplore">
+                        <a href="https://discord.gg/5N9sYPFN">
                             <svg class="w-6 h-6 svg-icon text-gray-500 dark:text-white" aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
                                 <path
                                     d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
                             </svg>
-                        </a>
-                        <a href="https://climate.stripe.com/c7XUk1">
-                            <img src="static/img/scb.png" alt="Stripe Climate Badge" style="width: 25px; height: 25px; margin-left: 5px; margin-bottom: 3px;">
                         </a>
                         <button id="theme-toggle" type="button"
                             class="dark text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
@@ -58,31 +53,113 @@
                                 style="font-size: 15px;" aria-current="page">Home</p>
                         </li>
                         <li>
-                            <a href="about.html"
+                            <a href="#"
                                 class="block py-2 pl-3 pr-4 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                                 style="font-size: 15px;" aria-current="page">About us</a>
                         </li>
                         <li>
-                            <a href="plans.html"
+                            <a href="#"
                                 class="block py-2 pl-3 pr-4 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                                 style="font-size: 15px;">Subscribe</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                                style="font-size: 15px;">More</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <div
+            class="belowbar fixed bottom-0 left-0 z-50 w-full h-16 border-t border-gray-200 bg-white dark:bg-gray-700 dark:border-gray-600">
+            <div class="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
+                <button type="button" class="inline-flex flex-col items-center justify-center px-5 bg-blue-500">
+                    <svg class="w-6 h-6 mb-1 text-white" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path
+                            d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
+                        </path>
+                    </svg>
+                    <span style="font-size: 13px;" class="text-white">Home</span>
+                </button>
+                <button type="button"
+                    class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="w-5 h-5 text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001" />
+                    </svg>
+                    <a class='text-sm text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500'
+                        href='/main/about' style='font-size: 13px;'>About</a>
+                </button>
+                <button type="button"
+                    class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                    <svg class="w-5 h-5 text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500"
+                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 9h2m3 0h5M1 5h18M2 1h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1Z" />
+                    </svg>
+                    <a class='text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500'
+                        href='/main/services' style='font-size: 13px;'>Subscribe</a>
+                </button>
+                <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover"
+                    class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:text-white dark:hover:bg-gray-800 group"
+                    type="button"><svg
+                        class="w-5 h-5 text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500"
+                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 3">
+                        <path
+                            d="M2 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm6.041 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM14 0a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z" />
+                    </svg>
+                    <p class="text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500"
+                        style="font-size: 13px;">More</p>
+                </button>
+                <!-- Dropdown menu -->
+                <div id="dropdownHover"
+                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                        <li>
+                            <a class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
+                                href='/main/payments'>Онлайн
+                                оплата</a>
+                        </li>
+                        <li>
+                            <a class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
+                                href='/main/prices'>Цены за
+                                образовательные услуги</a>
+                        </li>
+                        <li>
+                            <a class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
+                                href='/main/announcements'>Новости</a>
+                        </li>
+                        <li>
+                            <a class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
+                                href='/main/gallery'>Галерея</a>
+                        </li>
+                        <li>
+                            <a class='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
+                                href='/main/team'>Наша
+                                команда</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
-        <section style="background-image: url(static/img/banner.png); background-blend-mode: darken; background-size: 1440px; overflow-x: hidden;"
+        <section
+            style="background-image: url(/img/banner.png); background-blend-mode: darken; background-size: 1440px; overflow-x: hidden;"
             class="bg-center bg-no-repeat bg-gray-700">
             <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
                 <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
-                    The world's easiest way to use and learn AI</h1>
-                <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Join our Discord server to get started and learn more about what we offer.
-                    
+                    There are more than 10 000 users of our bot</h1>
+                <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Join to our server and
+                    have a fun with a lot of different types of Artificial Intillegences (AI) <br>
+                    We use more than 7 types and models of AI, to your taste!
                 </p>
                 <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-                    <a href="https://discord.gg/geneplore"
+                    <a href="#"
                         class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                         Get started
                         <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -91,25 +168,212 @@
                                 d="M1 5h12m0 0L9 1m4 4L9 9" />
                         </svg>
                     </a>
-                    <a href="products.html"
+                    <a href="#"
                         class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
                         Learn More
                     </a>
                 </div>
             </div>
         </section>
+        <section style="margin-top: 100px;">
+            <div class="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                <ul class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800"
+                    id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
+                    <li class="mr-2">
+                        <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about"
+                            aria-selected="true"
+                            class="inline-block p-4 text-blue-600 rounded-tl-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500">About
+                            bots</button>
+                    </li>
+                    <li class="mr-2">
+                        <button id="services-tab" data-tabs-target="#services" type="button" role="tab"
+                            aria-controls="services" aria-selected="false"
+                            class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300">Services</button>
+                    </li>
+                    <li class="mr-2">
+                        <button id="team-tab" data-tabs-target="#team" type="button" role="tab" aria-controls="team"
+                            aria-selected="false"
+                            class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300">Our
+                            team</button>
+                    </li>
+                </ul>
+                <div id="defaultTabContent">
+                    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="about" role="tabpanel"
+                        aria-labelledby="about-tab">
+                        <h2 class="mb-3 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Type the
+                            title about our bots</h2>
+                        <p class="mb-3 text-gray-500 dark:text-gray-400">here is the text. Advice: you can use chatgpt
+                            to make the text much longer</p>
+                        <img style="width: auto; height: auto;"
+                            src="https://assets.gatesnotes.com/8a5ac0b3-6095-00af-c50a-89056fbe4642/e675f5c2-624b-4efd-b82f-99e8a6ed968b/AI_20230215_new%20module_1200x580.jpg"
+                            alt="...">
+                        <a href="#"
+                            class="inline-flex items-center mt-4 font-medium text-blue-600 hover:text-blue-800 dark:text-blue-500 dark:hover:text-blue-700">
+                            Learn more
+                            <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 9 4-4-4-4" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="services" role="tabpanel"
+                        aria-labelledby="services-tab">
+                        <h2 class="mb-5 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white">title
+                            which tells about our qualification of work</h2>
+                        <!-- List -->
+                        <ul role="list" class="space-y-4 text-gray-500 dark:text-gray-400">
+                            <li class="flex space-x-2 items-center">
+                                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m7 10 2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                                <span class="leading-tight">facts that we can promise</span>
+                            </li>
+                            <li class="flex space-x-2 items-center">
+                                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m7 10 2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                                <span class="leading-tight">facts that we can promise</span>
+                            </li>
+                            <li class="flex space-x-2 items-center">
+                                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m7 10 2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                                <span class="leading-tight">facts that we can promise</span>
+                            </li>
+                            <li class="flex space-x-2 items-center">
+                                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m7 10 2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                                <span class="leading-tight">facts that we can promise</span>
+                            </li>
+                        </ul>
+                        <img style="width: auto; height: auto; margin-left: 10px; margin-top: 20px;"
+                            src="https://www.forbes.com/advisor/wp-content/uploads/2022/09/Image_-_MSP_.jpeg.jpg"
+                            alt="...">
+                    </div>
+                    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="team" role="tabpanel"
+                        aria-labelledby="team-tab">
+                        <h1 class="mb-6 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white"
+                            style="padding-top: 10px;">Owner [Lead developer]
+                        </h1>
+                        <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                            style="margin: auto; max-width: 400px; width: 100%">
+                            <a href="#">
+                                <img class="rounded-t-lg" style="max-width: 400px; width: 100%;"
+                                    src="https://images-ext-1.discordapp.net/external/KR69rh3NeOT_7ZAJrUuMfXeNDVgOYhZUfY1gpA0uOf8/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/766750708761493505/f3f1c74a98c246da5715790fe4ff5c4b.png?width=500&height=500"
+                                    alt="..." />
+                            </a>
+                            <div class="p-5">
+                                <a href="#">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Thegamebegins25
+                                    </h5>
+                                </a>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">description</p>
+                            </div>
+                        </div>
+                        <h1 class="mb-6 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white"
+                            style="padding-top: 70px;">Community Manager
+                        </h1>
+                        <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                            style="margin: auto; max-width: 400px; width: 100%">
+                            <a href="#">
+                                <img class="rounded-t-lg" style="max-width: 400px; width: 100%;"
+                                    src="https://images-ext-2.discordapp.net/external/kfGzjUCUkKrLGqtOWUQqIrSwKEIp73VNNPPFl3NcGfQ/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/816046022643679262/4317f097ce1f3808dcb3c439611022ce.png?width=500&height=500"
+                                    alt="..." />
+                            </a>
+                            <div class="p-5">
+                                <a href="#">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Rillaboom27
+                                    </h5>
+                                </a>
+                                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">description</p>
+                            </div>
+                        </div>
+                        <h1 class="mb-6 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white"
+                            style="padding-top: 10px;">Website developers
+                        </h1>
+                        <div class="column">
+                            <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                                style="margin: auto; max-width: 400px; width: 100%">
+                                <a href="#">
+                                    <img class="rounded-t-lg" style="max-width: 400px; width: 100%;"
+                                        src="https://images-ext-1.discordapp.net/external/KR69rh3NeOT_7ZAJrUuMfXeNDVgOYhZUfY1gpA0uOf8/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/766750708761493505/f3f1c74a98c246da5715790fe4ff5c4b.png?width=500&height=500"
+                                        alt="..." />
+                                </a>
+                                <div class="p-5">
+                                    <a href="#">
+                                        <h5
+                                            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                            Thegamebegins25
+                                        </h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">description</p>
+                                </div>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                                style="margin: auto; max-width: 400px; width: 100%">
+                                <a href="#">
+                                    <img class="rounded-t-lg" style="max-width: 400px; width: 100%;"
+                                        src="https://media.licdn.com/dms/image/D4E03AQEfsjuKzzGXsA/profile-displayphoto-shrink_800_800/0/1689412134579?e=1698278400&v=beta&t=UNjsIGnRYQ4bQbJP60sZwG-EpR9eUle_oG3868nRcdQ"
+                                        alt="..." />
+                                </a>
+                                <div class="p-5">
+                                    <a href="#">
+                                        <h5
+                                            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                            Night1ngale :3
+                                        </h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">description</p>
+                                </div>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                                style="margin: auto; max-width: 400px; width: 100%">
+                                <a href="#">
+                                    <img class="rounded-t-lg" style="max-width: 400px; width: 100%;"
+                                        src="https://images-ext-1.discordapp.net/external/-XkBgYAaFnQGBKGizNUV8JjYlLXgiKi8suWG5CqiKwU/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/659361315957243904/e897e575a305fa08d267e3256f52cc48.png?width=500&height=500"
+                                        alt="..." />
+                                </a>
+                                <div class="p-5">
+                                    <a href="#">
+                                        <h5
+                                            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                            KNAX
+                                        </h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">description</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </section>
     </main>
-    <footer>
+    <footer style="margin-top: 200px;">
 
     </footer>
     <script>
-    // On page load or when changing themes, best to add inline in `head` to avoid FOUC
-    if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-    } else {
-        document.documentElement.classList.remove('dark')
-    }
-</script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
     <script src="/site/js/home.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
 </body>
