@@ -3,6 +3,10 @@
     padding-top: 10px;
 }
 
+.belowbar {
+    display: none;
+}
+
 .geneplore {
     width: 300px;
 }
@@ -15,11 +19,26 @@
     margin-top: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    justify-content: space-around;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1020px) {
+    .column {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .belowbar {
+        display: block;
+    }
+
+    .column {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:600px) {
     .column {
         display: grid;
     }
