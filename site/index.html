@@ -4,18 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="/site/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,500&family=Noto+Sans:wght@500&family=Roboto+Slab:wght@500&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css" rel="stylesheet" />
     <title>Geneplore AI</title>
 </head>
 
-<body style="height: 1000px;" class="bg-#F5F5F5 dark:bg-gray-900">
+<body style="height: 1600px;" class="bg-#F5F5F5 dark:bg-gray-900">
     <header class="bg-white dark:bg-gray-900">
         <nav class="navbar bg-white dark:bg-gray-900 w-full top-0 left-0 border-b border-gray-200 dark:border-gray-600">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
                 style="margin-top: -15px;">
-                <a href="index.html" class="flex items-center logo">
-                    <img class="geneplore" src="static/img/geneplore.png" alt="logo">
+                <a href="home.html" class="flex items-center logo">
+                    <img class="geneplore" src="/img/geneplore.png" alt="logo">
                 </a>
                 <div class="flex md:order-2 gap-2">
                     <div class="gap-2 flex items-center">
@@ -26,6 +31,27 @@
                                     d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
                             </svg>
                         </a>
+                        <a href="https://github.com/GeneploreAI/geneplore.com">
+                            <svg class="w-6 h-6 svg-icon text-gray-500 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <button id="theme-toggle" type="button"
+                            class="dark text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                            <svg id="theme-toggle-dark-icon" class="hidden svg-icon" style="width: 20px; height: 20px;"
+                                fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                            </svg>
+                            <svg id="theme-toggle-light-icon" class="hidden svg-icon" style="width: 20px; height: 20px;"
+                                fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                    fill-rule="evenodd" clip-rule="evenodd"></path>
+                            </svg>
+                        </button>
                     </div>
                 </div>
                 <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
@@ -40,12 +66,17 @@
                                 style="font-size: 15px;" aria-current="page">Home</p>
                         </li>
                         <li>
-                            <a href="subscribe.html"
+                            <a href="#"
+                                class="block py-2 pl-3 pr-4 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                                style="font-size: 15px;" aria-current="page">About us</a>
+                        </li>
+                        <li>
+                            <a href="#"
                                 class="block py-2 pl-3 pr-4 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                                 style="font-size: 15px;">Subscribe</a>
                         </li>
                         <li>
-                            <a href="https://docs.geneplore.com"
+                            <a href="https://geneplore.readme.io/reference/start"
                                 class="block py-2 pl-3 pr-4 text-gray-500 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                                 style="font-size: 15px;">Documentation</a>
                         </li>
@@ -53,8 +84,8 @@
                 </div>
             </div>
         </nav>
-        <div
-            class="belowbar fixed bottom-0 left-0 z-50 w-full h-16 border-t border-gray-200 bg-white dark:bg-gray-700 dark:border-gray-600">
+        <div class="belowbar fixed bottom-0 right-0 left-0 z-50 w-full h-16 border-t border-gray-200 bg-white dark:bg-gray-700 dark:border-gray-600"
+            style="margin: auto;">
             <div class="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
                 <button type="button" class="inline-flex flex-col items-center justify-center px-5 bg-blue-500">
                     <svg class="w-6 h-6 mb-1 text-white" fill="currentColor" viewBox="0 0 20 20"
@@ -74,7 +105,7 @@
                             d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001" />
                     </svg>
                     <a class='text-sm text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500'
-                        href='/main/about' style='font-size: 13px;'>About</a>
+                        href='#' style='font-size: 13px;'>About</a>
                 </button>
                 <button type="button"
                     class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
@@ -84,21 +115,56 @@
                             d="M4 9h2m3 0h5M1 5h18M2 1h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1Z" />
                     </svg>
                     <a class='text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500'
-                        href='/main/services' style='font-size: 13px;'>Subscribe</a>
+                        href='#' style='font-size: 13px;'>Subscribe</a>
+                </button>
+                <button type="button"
+                    class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                    <svg class="w-5 h-5 text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500"
+                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                        <path
+                            d="M9 1.334C7.06.594 1.646-.84.293.653a1.158 1.158 0 0 0-.293.77v13.973c0 .193.046.383.134.55.088.167.214.306.366.403a.932.932 0 0 0 .5.147c.176 0 .348-.05.5-.147 1.059-.32 6.265.851 7.5 1.65V1.334ZM19.707.653C18.353-.84 12.94.593 11 1.333V18c1.234-.799 6.436-1.968 7.5-1.65a.931.931 0 0 0 .5.147.931.931 0 0 0 .5-.148c.152-.096.279-.235.366-.403.088-.167.134-.357.134-.55V1.423a1.158 1.158 0 0 0-.293-.77Z" />
+                    </svg>
+                    <a class="text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500"
+                        href='https://geneplore.readme.io/reference/start' style='font-size: 13px;'>Article</a>
                 </button>
             </div>
         </div>
     </header>
     <main>
+        <div id="bottom-right-modal" data-modal-placement="bottom-right" tabindex="-1"
+            class="fixed top-0 left-0 right-0 z-50 p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-[calc(100%-1rem)] max-h-full"
+            style="max-width: 400px; width: 100%; top: 55%;">
+            <div class="relative w-full max-w-2xl max-h-full">
+                <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                    <div class="flex items-center gap-6 p-5 border-b rounded-t dark:border-gray-600">
+                        <img src="https://www.svgrepo.com/show/30963/cookie.svg" width="35px" height="35px" alt="...">
+                        <h3 class="text-xl font-medium text-gray-900 dark:text-white">
+                            We use cookie files
+                        </h3>
+                    </div>
+                    <div
+                        class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b dark:border-gray-600">
+                        <button data-modal-hide="bottom-right-modal" type="button"
+                            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I
+                            Accept</button>
+                        <button data-modal-hide="bottom-right-modal" type="button"
+                            class="text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-gray-200 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <section
-            style="background-image: url(static/img/banner.png); background-blend-mode: darken; background-size: 1440px; overflow-x: hidden;"
+            style="background-image: url(/img/banner.png); background-blend-mode: darken; background-size: 1440px; overflow-x: hidden;"
             class="bg-center bg-no-repeat bg-gray-700">
             <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
                 <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
                     The world's easiest way to use AI</h1>
-                <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Our API and Discord bot provide access to many different world-class AIs, including ChatGPT, SDXL, and more, under one subscription.</p>
+                <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Join to our server and
+                    Our API and Discord bot provide access to many different world-class AIs, including ChatGPT, SDXL,
+                    and more, under one subscription.
+                </p>
                 <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-                    <a href="https://discord.gg/geneplore"
+                    <a href="#"
                         class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
                         Get started
                         <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -107,7 +173,7 @@
                                 d="M1 5h12m0 0L9 1m4 4L9 9" />
                         </svg>
                     </a>
-                    <a href="https://docs.geneplore.com"
+                    <a href="#"
                         class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
                         Learn More
                     </a>
@@ -121,8 +187,8 @@
                     <li class="mr-2">
                         <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about"
                             aria-selected="true"
-                            class="inline-block p-4 text-blue-600 rounded-tl-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500">Why Us
-                            </button>
+                            class="inline-block p-4 text-blue-600 rounded-tl-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500">Why
+                            bots</button>
                     </li>
                     <li class="mr-2">
                         <button id="services-tab" data-tabs-target="#services" type="button" role="tab"
@@ -133,18 +199,21 @@
                         <button id="team-tab" data-tabs-target="#team" type="button" role="tab" aria-controls="team"
                             aria-selected="false"
                             class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300">Our
-                            Team</button>
+                            team</button>
                     </li>
                 </ul>
                 <div id="defaultTabContent">
                     <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="about" role="tabpanel"
                         aria-labelledby="about-tab">
-                        <h2 class="mb-3 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Why choose us?</h2>
-                        <p class="mb-3 text-gray-500 dark:text-gray-400">Instead of subscribing to tons of different AI services and learning all of the documentation for them, you can use one format, one subscription, and one API for all of your AI needs.</p>
+                        <h2 class="mb-3 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">Why choose
+                            us?</h2>
+                        <p class="mb-3 text-gray-500 dark:text-gray-400">Instead of subscribing to tons of different AI
+                            services and learning all of the documentation for them, you can use one format, one
+                            subscription, and one API for all of your AI needs.</p>
                         <img style="width: auto; height: auto;"
                             src="https://assets.gatesnotes.com/8a5ac0b3-6095-00af-c50a-89056fbe4642/e675f5c2-624b-4efd-b82f-99e8a6ed968b/AI_20230215_new%20module_1200x580.jpg"
                             alt="...">
-                        <a href=""
+                        <a href="#"
                             class="inline-flex items-center mt-4 font-medium text-blue-600 hover:text-blue-800 dark:text-blue-500 dark:hover:text-blue-700">
                             Learn more
                             <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
@@ -156,7 +225,8 @@
                     </div>
                     <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="services" role="tabpanel"
                         aria-labelledby="services-tab">
-                        <h2 class="mb-5 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white">We provide the following AIs</h2>
+                        <h2 class="mb-5 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white">We provide
+                            the following AIs</h2>
                         <!-- List -->
                         <ul role="list" class="space-y-4 text-gray-500 dark:text-gray-400">
                             <li class="flex space-x-2 items-center">
@@ -173,7 +243,8 @@
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="2" d="m7 10 2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                 </svg>
-                                <span class="leading-tight">Stable Diffusion XL, DALL-E 2, Kandinsky 2.1, and more</span>
+                                <span class="leading-tight">Stable Diffusion XL, DALL-E 2, Kandinsky 2.1, and
+                                    more</span>
                             </li>
                             <li class="flex space-x-2 items-center">
                                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
@@ -189,14 +260,15 @@
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="2" d="m7 10 2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                 </svg>
-                                <span class="leading-tight">Auto-Moderation with Perspective API & OpenAI's endpoint</span>
+                                <span class="leading-tight">Auto-Moderation with Perspective API & OpenAI's
+                                    endpoint</span>
                             </li>
                         </ul>
                         <img style="width: auto; height: auto; margin-left: 10px; margin-top: 20px;"
                             src="https://www.forbes.com/advisor/wp-content/uploads/2022/09/Image_-_MSP_.jpeg.jpg"
                             alt="...">
                     </div>
-                        <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="team" role="tabpanel"
+                    <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="team" role="tabpanel"
                         aria-labelledby="team-tab">
                         <h1 class="mb-6 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white"
                             style="padding-top: 10px;">Owners
@@ -205,91 +277,162 @@
                             <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
                                 style="margin: auto; max-width: 400px; width: 100%">
 
-                                    <img class="rounded-t-lg" style="max-width: 400px; width: 100%;"
-                                        src="static/img/profilepics/tgb25.png"
-                                        alt="..." />
+                                <img class="rounded-t-lg" style="max-width: 400px; width: 100%;"
+                                    src="https://images-ext-1.discordapp.net/external/KR69rh3NeOT_7ZAJrUuMfXeNDVgOYhZUfY1gpA0uOf8/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/766750708761493505/f3f1c74a98c246da5715790fe4ff5c4b.png?width=500&height=500"
+                                    alt="..." />
 
                                 <div class="p-5">
 
-                                        <h5
-                                            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                            thegamebegins25
-                                        </h5>
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        thegamebegins25
+                                    </h5>
 
-                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Founder/CEO & Lead Developer</p>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Mastermind behind
+                                        groundbreaking technologies: Meet the innovative Founder/CEO and Lead Developer
+                                        revolutionizing the industry</p>
                                 </div>
                             </div>
                             <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
                                 style="margin: auto; max-width: 400px; width: 100%">
 
-                                    <img class="rounded-t-lg" style="max-width: 400px; width: 100%;"
-                                        src="static/img/profilepics/rillaboom.png"
-                                        alt="..." />
+                                <img class="rounded-t-lg" style="max-width: 400px; width: 100%;"
+                                    src="https://images-ext-1.discordapp.net/external/ruHmFRUs3SQNqTIPVecKchggZ6UR8iD1pKXULTU8tRc/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/816046022643679262/a786aec0d1160759a673e21f39434f8d.png?width=500&height=500"
+                                    alt="..." />
 
                                 <div class="p-5">
 
-                                        <h5
-                                            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                            Rillaboom27
-                                        </h5>
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                        Rillaboom27
+                                    </h5>
 
-                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Community Manager for our Discord server</p>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Engage and Foster a
+                                        Thriving Discord Community as Our Dedicated Community Manage, best support of
+                                        the company who has built the whole active on the server</p>
                                 </div>
                             </div>
                         </div>
                         <h1 class="mb-6 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white"
-                            style="padding-top: 10px;">Developers
+                            style="padding-top: 10px;">Website developers
                         </h1>
                         <div class="column">
                             <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-                                style="margin: auto; max-width: 250px; width: 50%">
-   
+                                style="margin: auto; max-width: 400px; width: 100%">
+                                <a href="#">
                                     <img class="rounded-t-lg" style="max-width: 400px; width: 100%;"
-                                        src="static/img/profilepics/tgb25.png"
+                                        src="https://images-ext-1.discordapp.net/external/KR69rh3NeOT_7ZAJrUuMfXeNDVgOYhZUfY1gpA0uOf8/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/766750708761493505/f3f1c74a98c246da5715790fe4ff5c4b.png?width=500&height=500"
                                         alt="..." />
-              
+                                </a>
                                 <div class="p-5">
-
+                                    <a href="#">
                                         <h5
                                             class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                            thegamebegins25
+                                            Thegamebegins25
                                         </h5>
-                            
-                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lead Developer for the bot, API and website</p>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Transforming the
+                                        digital landscape through proactive problem-solving: Streamlining innovation as
+                                        a Lead Developer specializing in Bot, API, and Website Development</p>
                                 </div>
                             </div>
                             <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-                                style="margin: auto; max-width: 250px; width: 50%">
-                       
+                                style="margin: auto; max-width: 400px; width: 100%">
+                                <a href="#">
                                     <img class="rounded-t-lg" style="max-width: 400px; width: 100%;"
-                                        src="static/img/profilepics/nightingale.png"
+                                        src="https://media.licdn.com/dms/image/D4E03AQEfsjuKzzGXsA/profile-displayphoto-shrink_800_800/0/1689412134579?e=1698278400&v=beta&t=UNjsIGnRYQ4bQbJP60sZwG-EpR9eUle_oG3868nRcdQ"
                                         alt="..." />
-                     
+                                </a>
                                 <div class="p-5">
-                      
+                                    <a href="#">
                                         <h5
                                             class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                                             Night1ngale :3
                                         </h5>
-                     
-                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Web Developer for geneplore.com</p>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Transforming Your Web
+                                        Experience: Seeking an Ultimate Talented Web Developer and Deserved Designer:
+                                        Igniting Creativity on Geneplore Company</p>
                                 </div>
                             </div>
                             <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
-                                style="margin: auto; max-width: 250px; width: 50%">
-                       
+                                style="margin: auto; max-width: 400px; width: 100%">
+                                <a href="#">
                                     <img class="rounded-t-lg" style="max-width: 400px; width: 100%;"
-                                        src="static/img/profilepics/knax.png"
+                                        src="https://images-ext-1.discordapp.net/external/-XkBgYAaFnQGBKGizNUV8JjYlLXgiKi8suWG5CqiKwU/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/659361315957243904/e897e575a305fa08d267e3256f52cc48.png?width=500&height=500"
                                         alt="..." />
-                 
+                                </a>
                                 <div class="p-5">
-                             
+                                    <a href="#">
                                         <h5
                                             class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                                             KNAX
                                         </h5>
-                        
-                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Web Developer</p>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Master the Craft of Web
+                                        Development: Expert Backend Programmer, Innovative Designer, and Exceptional Web
+                                        Developer of Geneplore Company</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h1 class="mb-6 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white"
+                            style="padding-top: 10px;">API developers
+                        </h1>
+                        <div class="column">
+                            <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                                style="margin: auto; max-width: 400px; width: 100%">
+                                <a href="#">
+                                    <img class="rounded-t-lg" style="max-width: 400px; width: 100%;"
+                                        src="https://images-ext-2.discordapp.net/external/EEJAFerYyOU00G4HyAXLc9fkLmObTshJKPR-vV_ETRg/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/715988709576802378/f0009f7be3ae45ae58d94b0aa5efe225.png?width=500&height=500"
+                                        alt="..." />
+                                </a>
+                                <div class="p-5">
+                                    <a href="#">
+                                        <h5
+                                            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                            YourAverageDev
+                                        </h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Proficient API
+                                        Developer Excelling in Both Backend and Frontend, Expertly Leveraging Ideal
+                                        Connectivity with Mastering Full Stack API Development with Expertise in Backend
+                                        and Frontend Integration</p>
+                                </div>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                                style="margin: auto; max-width: 400px; width: 100%">
+                                <a href="#">
+                                    <img class="rounded-t-lg" style="max-width: 400px; width: 100%;"
+                                        src="https://images-ext-1.discordapp.net/external/KR69rh3NeOT_7ZAJrUuMfXeNDVgOYhZUfY1gpA0uOf8/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/766750708761493505/f3f1c74a98c246da5715790fe4ff5c4b.png?width=500&height=500"
+                                        alt="..." />
+                                </a>
+                                <div class="p-5">
+                                    <a href="#">
+                                        <h5
+                                            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                            Thegamebegins25
+                                        </h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Transforming the
+                                        digital landscape through proactive problem-solving: Streamlining innovation as
+                                        a Lead Developer specializing in Bot, API, and Website Development</p>
+                                </div>
+                            </div>
+                            <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+                                style="margin: auto; max-width: 400px; width: 100%">
+                                <a href="#">
+                                    <img class="rounded-t-lg" style="max-width: 400px; width: 100%;"
+                                        src="https://images-ext-1.discordapp.net/external/4MxoMjRtxREdxR5p8Jaxp5IsF0K4fbLZsvPf5CofkhQ/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/775496919489052723/82a49c9b4996214e5b2bb7322fc574c2.png?width=500&height=500"
+                                        alt="..." />
+                                </a>
+                                <div class="p-5">
+                                    <a href="#">
+                                        <h5
+                                            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                            Delamcode
+                                        </h5>
+                                    </a>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Awesome programmer in
+                                        different fields of programming languages, a rich and varied programmer in every
+                                        sense of the word, has a talent for API keys</p>
                                 </div>
                             </div>
                         </div>
@@ -297,22 +440,613 @@
                 </div>
             </div>
             </div>
+        </section>
+        <section style="margin-top: 100px;">
+            <div id="default-carousel" class="relative w-full" data-carousel="slide">
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="/img/banner.png"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="https://techstory.in/wp-content/uploads/2023/04/image-of-hand-holding-an-ai-face-looking-at-the-words-chatgpt-openai.webp"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="https://st.adda247.com/https://wpassets.adda247.com/wp-content/uploads/multisite/sites/5/2023/07/19194351/Meta-and-Microsoft-Introduce-the-Next-Generation-of-Llama.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="https://miro.medium.com/v2/resize:fit:1358/1*CmXBSDj1aaIor1E4Ayugkg.jpeg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                        data-carousel-slide-to="3"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full dark:bg-white/30 bg-gray-800/30 dark:group-hover:bg-white/50 group-hover:bg-gray-800/60 group-focus:ring-4 dark:group-focus:ring-white group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 dark:text-white text-gray-800" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full dark:bg-white/30 bg-gray-800/30 dark:group-hover:bg-white/50 group-hover:bg-gray-800/60 group-focus:ring-4 dark:group-focus:ring-white group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 dark:text-white text-gray-800" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+
+            <div style="margin-top: 80px;" id="default-carousel" class="relative w-full" data-carousel="slide">
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                    <!-- Item 1 -->
+                    <div class="bg-gray-900 hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="https://i.ytimg.com/vi/76VkOoYv0fY/maxresdefault.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="bg-gray-900 hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="https://www.kimp.io/wp-content/uploads/2023/05/DALL.E-2-featured.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="bg-gray-900 hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="https://wotpack.ru/wp-content/uploads/2023/04/https-sun9-74-userapi-com-impg-n-lz2uzqfscvbp8dt-800x450.jpeg.webp"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="bg-gray-900 hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="https://prompthero.s3.amazonaws.com/og/openjourney-og-image.jpg"
+                            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                </div>
+                <!-- Slider indicators -->
+                <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                        data-carousel-slide-to="2"></button>
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4"
+                        data-carousel-slide-to="3"></button>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full dark:bg-white/30 bg-gray-800/30 dark:group-hover:bg-white/50 group-hover:bg-gray-800/60 group-focus:ring-4 dark:group-focus:ring-white group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 dark:text-white text-gray-800" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full dark:bg-white/30 bg-gray-800/30 dark:group-hover:bg-white/50 group-hover:bg-gray-800/60 group-focus:ring-4 dark:group-focus:ring-white group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 dark:text-white text-gray-800" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
             </div>
         </section>
+        <section class="discord bg-gray-300 dark:bg-gray-700 p-8">
+            <div class="grid gap-6" style="max-width: 500px; width: 100%">
+                <h1 class="font-bold text-4xl text-gray-900 dark:text-white discord-title">
+                    Title of description of our Discord server
+                </h1>
+                <p class="text-gray-600 dark:text-gray-100 text-lg discord-text" style="font-family: 'Noto Sans';">
+                    description (use chatgpt
+                    for help, he can write a huge amount of text)</p>
+                <a href="https://discord.gg/geneplore" type="button"
+                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Learn
+                    more</a>
+            </div>
+            <img style="max-width: 400px; width: 100%; height: auto; margin: auto;"
+                src="https://wallpapers.com/images/hd/discord-logo-geometric-art-5barh6w9jxj5mhzw.jpg" alt="">
+        </section>
+
+        <section class="api bg-gray-300 dark:bg-gray-700 p-8">
+            <div class="grid gap-6" style="max-width: 500px; width: 100%">
+                <h1 class="font-bold text-4xl text-gray-900 dark:text-white api-title">
+                    Title of description of API documentation
+                </h1>
+                <p class="text-gray-600 dark:text-gray-100 text-lg api-text" style="font-family: 'Noto Sans';">
+                    description (use chatgpt
+                    for help, he can write a huge amount of text)</p>
+                <a href="#" type="button"
+                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Learn
+                    more</a>
+            </div>
+            <img style="max-width: 400px; width: 100%; height: auto; margin: auto;"
+                src="https://appmaster.io/api/_files/PqV7MuNwv89GrZvBd4LNNK/download/" alt="">
+        </section>
+        <h1 style="margin-top: 150px;" class="tracking-tight font-bold text-4xl text-center dark:text-white">Our Bots
+            and Models</h1>
+        <section class="bot-sec">
+            <div class="grid gap-6">
+                <h1 style="font-family: 'Noto Sans';" class="font-bold text-4xl text-purple-800 dark:text-purple-500">
+                    The best bot in the
+                    server - ChatGPT</h1>
+                <p style="font-family: 'Montserrat'; max-width: 500px; width: 100%;"
+                    class="text-xl text-gray-500 font-bold dark:text-gray-300">ChatGPT
+                    is the best and most popular bot on the server and it's so famous for its versatility, but however
+                    the name does not limit its ability to work, it has 7 models (not counting the two premium models)
+                    that everyone can use whenever they want, and moreover, the AI ​​has behaviors that can also be
+                    controlled as models, if you want it can for example become very funny, smart or even crazy! But
+                    that's still not the end, ChatGPT also has a moderation mode that project contributors can use to
+                    expel or silence a rule breaker, resulting in a comfortable and adequate chat conversation.
+                    Also, this bot can become an image generator, and even a video.
+                    <br>
+                    <br>
+                    All detailed information as always in our discord server!
+                    <br>
+                    <a class="learn-more border border-gray-800 border-b-2 dark:border-white dark:text-white"
+                        href="https://discord.gg/geneplore">Learn more</a>
+                </p>
+            </div>
+            <div style="background: linear-gradient(45deg, rgb(94, 0, 123), rgb(155, 0, 202),  rgb(225, 0, 225)); max-width: 550px; width: 100%; max-height: 550%; height: 100%; border-radius: 50%;"
+                class="p-8">
+                <img src="https://images-ext-1.discordapp.net/external/r-clU1hvLB8zPPy87ywHdYNvZQn-U6U1LMA8-Y-ciEM/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/1089317211652509811/029d486e00123ee9ab2eccc0e5110c0f.png?width=500&height=500"
+                    style="max-width: 500px; width: 100%; border-radius: 50%;" alt="...">
+            </div>
+        </section>
+        <section class="bot-sec">
+            <div style="background: linear-gradient(45deg, rgb(3, 0, 162), rgb(0, 57, 202),  rgb(0, 86, 225)); max-width: 550px; width: 100%; max-height: 550%; height: 100%; border-radius: 50%;"
+                class="p-8">
+                <img src="https://cdn.discordapp.com/avatars/294882584201003009/4bfd18c35f26a86f2b5b4eb2ad81a1f7.png?size=1024"
+                    style="max-width: 500px; width: 100%; border-radius: 50%;" alt="...">
+            </div>
+            <div class="grid gap-6">
+                <h1 style="font-family: 'Noto Sans';" class="font-bold text-4xl text-purple-800 dark:text-purple-500">
+                    Bot for events and giveaways</h1>
+                <p style="font-family: 'Montserrat'; max-width: 500px; width: 100%;"
+                    class="text-xl text-gray-500 font-bold dark:text-gray-300">A Giveaway Bot in Discord is a powerful
+                    and user-friendly bot designed to facilitate and manage giveaways within a Discord server. With its
+                    robust features and customization options, it simplifies the process of organizing and conducting
+                    giveaways, ensuring fairness and transparency.
+                    This bot allows server administrators to effortlessly set up giveaways by specifying crucial details
+                    like the prize, duration, entry requirements, and the number of winners.
+                    <br>
+                    The Giveaway Bot also automates notifications and reminders related to the giveaway
+                    <br>
+                    <br>
+                    You can read more information about GiveawayBot in their site - giveawaybot.party!
+                    <br>
+                    <a class="learn-more border border-gray-800 border-b-2 dark:border-white dark:text-white"
+                        href="https://giveawaybot.party">Learn more</a>
+                </p>
+            </div>
+        </section>
+        <section class="bot-sec">
+            <div class="grid gap-6">
+                <h1 style="font-family: 'Noto Sans';" class="font-bold text-4xl text-purple-800 dark:text-purple-500">
+                    Discord bots and servers finder - Top.gg</h1>
+                <p style="font-family: 'Montserrat'; max-width: 500px; width: 100%;"
+                    class="text-xl text-gray-500 font-bold dark:text-gray-300">Top.gg is a popular Discord bot that
+                    offers an extensive range of features and utilities to enhance your Discord server. With numerous
+                    commands and customizable settings, this bot aims to make managing and moderating your community a
+                    breeze.
+                    <br>
+                    One of the key features of top.gg is its advanced moderation tools. It provides auto-moderation
+                    features such as anti-spam filters, word filters, and anti-raid protection.
+                    <br>
+                    <br>
+                    just click the button to enter the top.gg's website, you can also add the bot to the server!
+                    <br>
+                    <a class="learn-more border border-gray-800 border-b-2 dark:border-white dark:text-white"
+                        href="https://top.gg">Learn more</a>
+                </p>
+            </div>
+            <div style="background: linear-gradient(45deg, rgb(58, 0, 0), rgb(142, 0, 0),  rgb(244, 61, 61)); max-width: 550px; width: 100%; max-height: 550%; height: 100%; border-radius: 50%;"
+                class="p-8">
+                <img src="https://images-ext-2.discordapp.net/external/BOtt8KzmrwzNHtIETlgppeHkaByOqjLTOMQFPvNL1Hg/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/422087909634736160/d41e1166aadbba1fd62f6c43e2a15777.png?width=500&height=500"
+                    style="max-width: 500px; width: 100%; border-radius: 50%;" alt="...">
+            </div>
+        </section>
+
+        <section style="margin-top: 200px;">
+            <h1 class="tracking-tight text-center font-bold text-4xl dark:text-white">Statistics</h1>
+            <div class="border-t border-gray-200 dark:border-gray-600" style="margin-top: 50px;">
+                <section
+                    style="background-image: url(https://eige.europa.eu/sites/default/files/images/indicators.jpg); background-blend-mode: multiply; background-size: 1540px; overflow: hidden;"
+                    class="bg-center bg-no-repeat bg-gray-700">
+                    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+                        <dl
+                            class=" grid max-w-screen-xl grid-cols-2 gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-3 xl:grid-cols-6 dark:text-white sm:p-8">
+                            <div class="flex flex-col items-center justify-center">
+                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">11k+</dt>
+                                <dd class="text-center text-white">Users</dd>
+                            </div>
+                            <div class="flex flex-col items-center justify-center">
+                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">100+</dt>
+                                <dd class="text-center text-white">Premium members</dd>
+                            </div>
+                            <div class="flex flex-col items-center justify-center">
+                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">1</dt>
+                                <dd class="text-center text-white">Manager</dd>
+                            </div>
+                            <div class="flex flex-col items-center justify-center">
+                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">6</dt>
+                                <dd class="text-center text-white">Moderators</dd>
+                            </div>
+                            <div class="flex flex-col items-center justify-center">
+                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">4</dt>
+                                <dd class="text-center text-white">Bots</dd>
+                            </div>
+                            <div class="flex flex-col items-center justify-center">
+                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">40+</dt>
+                                <dd class="text-center text-white">Voters</dd>
+                            </div>
+                        </dl>
+                    </div>
+            </div>
+            <hr>
+        </section>
+        <h1 style="margin-top: 200px;"
+            class="tracking-tight font-extrabold text-center text-5xl text-gray-900 dark:text-white">Our Subscriptions
+        </h1>
+        <section class="subscriptions">
+            <div
+                class=" w-full max-w-sm bg-gradient-to-br from-purple-600 to-blue-500 border border-gray-200 rounded-lg shadow dark:border-gray-700">
+                <a href="#">
+                    <img class="p-8" style="border-radius: 10%;"
+                        src="https://media.discordapp.net/attachments/1101297285196951612/1102259126077235281/black-openai.png?width=468&height=468"
+                        alt="product image" />
+                </a>
+                <div class="px-5 pb-5">
+                    <span class="grid gap-2">
+                        <h5 class="text-5xl text-center pl-4 font-semibold tracking-tight tex text-white">
+                            Basic</h5>
+                        <p class="text-center text-2xl text-white">Basic ChatGPT plan
+                        </p>
+                    </span>
+                    <div class="flex items-center justify-between">
+                        <span class="grid gap-2 mt-6">
+                            <h5 class="text-3xl font-bold tex text-white">$3.99</h5>
+                            <p class=" text-lg font-medium text-white">PER MONTH</p>
+                        </span>
+                    </div>
+                    <div class="grid mt-8">
+                        <h5 class="text-lg font-bold text-white pl-2">MEMBER COLOR & BADGE</h5>
+                        <div
+                            class="mt-2 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            <h5 class="flex items-center gap-2 mb-2 text-2xl font-medium tracking-tight text-black"><img
+                                    src="https://cdn.discordapp.com/attachments/1031137984378056724/1146369232959979520/discord-avatar-1024-S53K0.png"
+                                    width="40px" height="40px" alt="..."> Subscriber <img
+                                    src="https://media.discordapp.net/attachments/1101297285196951612/1112016248734220441/black-openai.png?width=25&height=25"
+                                    alt="..."></h5>
+                            <p class="font-normal text-black dark:text-white" style="padding-left: 45px;">wow, my
+                                nickname stands out in the
+                                chat!</p>
+
+                        </div>
+                        <h5 class="text-lg font-bold text-white pl-2 mt-6">EXCLUSIVE CHANNELS</h5>
+                        <p class="text-white pl-2 text-lg mt-2"># 🤑subscribers-only</p>
+                        <p class="text-gray-700 text-white pl-2 text-md">Chat with other subscribers</p>
+                        <p class="text-white pl-2 text-lg"># 🆕emoji-request</p>
+                        <p class="text-gray-700 text-white pl-2 text-md">Request emoji to be added to the server
+                        </p>
+                        <div class="bg-gray-400 dark:bg-gray-700 mt-4" style="height: 1px; width: 100%;"></div>
+                        <h5 class="text-lg font-bold text-white pl-2 mt-6">ADDITIONAL BENEFITS
+                        </h5>
+                        <p class="text-white pl-2 text-lg mt-2">🔓 GPT-4 Access</p>
+                        <p class="text-gray-700 text-white pl-2 text-md">Access to All-new GPT-4 by OpenAI</p>
+                        <p class="text-white pl-2 text-lg mt-2">💵 25,000 credits/month</p>
+                        <p class="text-gray-700 text-white pl-2 text-md">25,000 credits per month</p>
+                        <p class="text-white pl-2 text-lg mt-2">🔐 Private Conversations in DMs</p>
+                        <p class="text-gray-700 text-white pl-2 text-md">Unlock private conversations in DMs and
+                            using /chatprivate in servers.</p>
+                        <div class="bg-gray-400 dark:bg-gray-700 mt-4" style="height: 1px; width: 100%;"></div>
+                        <h5 class="text-lg font-bold text-white pl-2 mt-6">+6 EMOJI</h5>
+                    </div>
+                </div>
+                <a type="button" href="https://discord.com/channels/1092173065967911002/1093697929375645776"
+                    class="inline-flex items-center justify-center text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm text-center mr-2 mb-2"
+                    style="font-family: 'Montserrat'; margin-bottom: 15px; margin-left: 100px; padding: 15px 60px;">Subscribe</a>
+            </div>
+            <div
+                class="w-full max-w-sm bg-gradient-to-br from-green-400 to-cyan-600 border border-gray-200 rounded-lg shadow dark:border-gray-700">
+                <a href="#">
+                    <img class="p-8" style="border-radius: 10%;"
+                        src="https://cdn.discordapp.com/attachments/1031244802588672030/1146418327800008784/chatgpt-logo-chat-gpt-icon-on-green-background-free-vector.png"
+                        alt="product image" />
+                </a>
+                <div class="px-5 pb-5">
+                    <span class="grid gap-2">
+                        <h5 class="text-5xl text-center pl-4 font-semibold tracking-tight tex text-white">
+                            Pro</h5>
+                        <p class="text-center text-2xl text-white">Pro ChatGPT access
+                        </p>
+                    </span>
+                    <div class="flex items-center justify-between">
+                        <span class="grid gap-2 mt-6">
+                            <h5 class="text-3xl font-bold tex text-white">$8.99</h5>
+                            <p class=" text-lg font-medium text-white">PER MONTH</p>
+                        </span>
+                    </div>
+                    <div class="grid mt-8">
+                        <h5 class="text-lg font-bold text-white pl-2">MEMBER COLOR & BADGE</h5>
+                        <div
+                            class="mt-2 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            <h5 class="flex items-center gap-2 mb-2 text-2xl font-medium tracking-tight text-green-400">
+                                <img src="https://cdn.discordapp.com/attachments/1031137984378056724/1146369232959979520/discord-avatar-1024-S53K0.png"
+                                    width="40px" height="40px" alt="..."> Subscriber <img width="25px" height="25px"
+                                    src="https://cdn.discordapp.com/attachments/1031244802588672030/1146418327800008784/chatgpt-logo-chat-gpt-icon-on-green-background-free-vector.png"
+                                    alt="...">
+                            </h5>
+                            <p class="font-normal text-black dark:text-white" style="padding-left: 45px;">wow, my
+                                nickname stands out in the
+                                chat!</p>
+
+                        </div>
+                        <h5 class="text-lg font-bold text-white pl-2 mt-6">EXCLUSIVE CHANNELS</h5>
+                        <p class="text-white pl-2 text-lg mt-2"># 🤑subscribers-only</p>
+                        <p class="text-gray-700 text-white pl-2 text-md">Chat with other subscribers</p>
+                        <p class="text-white pl-2 text-lg"># 🆕emoji-request</p>
+                        <p class="text-gray-700 text-white pl-2 text-md">Request emoji to be added to the server
+                        </p>
+                        <div class="bg-gray-400 dark:bg-gray-700 mt-4" style="height: 1px; width: 100%;"></div>
+                        <h5 class="text-lg font-bold text-white pl-2 mt-6">ADDITIONAL BENEFITS
+                        </h5>
+                        <p class="text-white pl-2 text-lg mt-2">🔓 GPT-4 Access</p>
+                        <p class="text-gray-700 text-white pl-2 text-md">Access to All-new GPT-4 by OpenAI</p>
+                        <p class="text-white pl-2 text-lg mt-2">💵 100,000 credits/month</p>
+                        <p class="text-gray-700 text-white pl-2 text-md">100,000 credits per month</p>
+                        <p class="text-white pl-2 text-lg mt-2">🔐 Private Conversations in DMs</p>
+                        <p class="text-gray-700 text-white pl-2 text-md">Unlock private conversations in DMs and
+                            using /chatprivate in servers.</p>
+                        <div class="bg-gray-400 dark:bg-gray-700 mt-4" style="height: 1px; width: 100%;"></div>
+                        <h5 class="text-lg font-bold text-white pl-2 mt-6">+7 EMOJI</h5>
+                    </div>
+                </div>
+                <a type="button" href="https://discord.com/channels/1092173065967911002/1093697929375645776"
+                    class="inline-flex items-center justify-center text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm text-center mr-2 mb-2"
+                    style="font-family: 'Montserrat'; margin-bottom: 15px; margin-left: 100px; padding: 15px 60px;">Subscribe</a>
+            </div>
+            <div
+                class="w-full ultra max-w-sm bg-gradient-to-r from-purple-500 to-pink-500 border border-gray-200 rounded-lg shadow dark:border-gray-700">
+                <a href="#">
+                    <img class="p-8" style="border-radius: 10%;"
+                        src="https://media.discordapp.net/attachments/1101297285196951612/1112016248998469632/color-openai.png?width=468&height=468"
+                        alt="product image" />
+                </a>
+                <div class="px-5 pb-5">
+                    <span class="grid gap-2">
+                        <h5 class="text-5xl text-center pl-4 font-semibold tracking-tight tex text-white">
+                            Ultra</h5>
+                        <p class="text-center text-white text-2xl text-gray-300">Ultra access for
+                            ChatGPT access - BEST VALUE
+                        </p>
+                    </span>
+                    <div class="flex items-center mt-2.5 mb-5 pl-2">
+                        <h5 class="text-2xl pl-4 font-semibold tracking-tight tex text-white"></h5>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="grid gap-2">
+                            <h5 class="text-3xl font-bold tex text-white">$19.99</h5>
+                            <p class="text-white text-lg font-medium">PER MONTH</p>
+                        </span>
+                    </div>
+                    <div class="grid mt-8">
+                        <h5 class="text-lg font-bold text-white pl-2">MEMBER COLOR & BADGE</h5>
+                        <div
+                            class="mt-2 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            <h5 class="flex items-center gap-2 mb-2 text-2xl font-medium tracking-tight"
+                                style="color: #ff2dab;"><img
+                                    src="https://cdn.discordapp.com/attachments/1031137984378056724/1146369232959979520/discord-avatar-1024-S53K0.png"
+                                    width="40px" height="40px" alt="..."> Subscriber <img
+                                    src="https://media.discordapp.net/attachments/1101297285196951612/1112016248998469632/color-openai.png?width=25&height=25"
+                                    alt="..."></h5>
+                            <p class="font-normal text-black dark:text-white" style="padding-left: 45px;">wow, my
+                                nickname stands out in the
+                                chat!</p>
+
+                        </div>
+                        <h5 class="text-lg font-bold text-white pl-2 mt-6">EXCLUSIVE CHANNELS</h5>
+                        <p class=" text-white pl-2 text-lg mt-2"># 🔏ultra-membersers-only</p>
+                        <p class="text-white pl-2 text-md">Talk and use ChatGPT with other
+                            subscribers</p>
+                        <p class=" text-white pl-2 text-lg mt-2"># 🧪ultra-beta-testing</p>
+                        <p class="text-white pl-2 text-md">beta test the newest features of our
+                            bot and ChatGPT!</p>
+                        <p class=" text-white pl-2 text-lg mt-2"># 🤑subscribers-only</p>
+                        <p class="text-white pl-2 text-md">Chat with other subscribers</p>
+                        <p class=" text-white pl-2 text-lg mt-2"># 🆕emoji-request</p>
+                        <p class="text-white pl-2 text-md">Request emoji to be added to the server
+                        </p>
+                        <div class="b bg-gray-400 mt-4" style="height: 1px; width: 100%;"></div>
+                        <h5 class="text-lg font-bold text-white pl-2 mt-6">ADDITIONAL BENEFITS
+                        </h5>
+                        <p class=" text-white pl-2 text-lg mt-2">🔓 GPT-4 Access</p>
+                        <p class="text-white pl-2 text-md">Access to All-new GPT-4 by OpenAI</p>
+                        <p class=" text-white pl-2 text-lg mt-2">💵 200,000 credits/month</p>
+                        <p class="text-white pl-2 text-md">200,000 credits per month</p>
+                        <p class="text-white pl-2 text-lg mt-2">🔐 Private Conversations in DMs</p>
+                        <p class="text-white pl-2 text-md">Unlock private conversations in DMs and
+                            using /chatprivate in servers.</p>
+                        <p class=" text-white pl-2 text-lg mt-2">📞 Priority support</p>
+                        <p class="text-white pl-2 text-md">Priority support in DMs and in forum
+                            channels - your feature will be the first to be implemented</p>
+                        <p class=" text-white pl-2 text-lg mt-2">⏩ Beta </p>
+                        <p class="text-white pl-2 text-md">Get early access to Beta testing in our
+                            (and in OpenAi's) newest features and models.</p>
+                        <p class=" text-white pl-2 text-lg mt-2">🦾 Priority Access</p>
+                        <p class="text-white pl-2 text-md">You will get a priority access over others during times of
+                            high
+                            load, such as if OpenAI starts ratelimiting us
+                        </p>
+                        <div class="b bg-gray-400 mt-4" style="height: 1px; width: 100%;"></div>
+                        <h5 class="text-lg font-bold text-white pl-2 mt-6">+8 EMOJI</h5>
+                    </div>
+                </div>
+                <a type="button" href="https://discord.com/channels/1092173065967911002/1093697929375645776"
+                    class="inline-flex items-center justify-center text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                    style="
+                    font-family: 'Montserrat' ; margin-bottom: 15px; margin-left: 100px; padding: 15px 60px;">Subcribe</a>
+            </div>
+        </section>
+        <section style="margin-top: 600px;">
+            <h1 class="text-center text-3xl tracking-tight text-gray-900 dark:text-white" style="margin-bottom: 10px;">
+                Connect with us</h1>
+            <form style="max-width: 1440px; margin: auto; padding: 50px; border: 1px solid #d4d4d4;">
+                <div class="relative z-0 mb-6 group"
+                    style="max-width: 1300px; width: 100%; margin: auto; margin-bottom: 20px;">
+                    <input type="text" style="max-width: 1300px; width: 100%;" name="email" id="floating_email"
+                        class="block py-2.5 px-0 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " required />
+                    <label for="floating_email"
+                        class="peer-focus:font-medium absolute text-md text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email
+                        Adress</label>
+                </div>
+                <div class="relative z-0 mb-6 group"
+                    style="max-width: 1300px; margin: auto; width: 100%; margin-bottom: 50px;">
+                    <input type="text" name="name" style="max-width: 1300px; margin: auto; width: 100%;"
+                        id="floating_name"
+                        class="block py-2.5 px-0 text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                        placeholder=" " required />
+                    <label for="floating_name"
+                        class="peer-focus:font-medium absolute text-md text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Name</label>
+                </div>
+                <textarea name="text" id="message" rows="4"
+                    style="font-family: 'Montserrat'; font-weight: 600; max-width: 1300px; width: 100%; margin: auto; padding-top: 20px; height: 200px;"
+                    class="block p-2.5 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Type something..."></textarea>
+
+                <input type="submit" name="submit" value="Submit"
+                    style="justify-content: end; margin-top: 50px; padding: 15px 60px;"
+                    class="text-white rounded-full bg-gradient-to-r from-purple-600 to-blue-700 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium text-lg text-center mb-4">
+            </form>
+        </section>
     </main>
-    <footer style="margin-top: 200px;">
+    <footer class="bg-white dark:bg-gray-900">
+        <hr>
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:items-center" style="gap: 100px; justify-content: space-around;">
+                <div class="mb-6 md:mb-0">
+                    <a href="https://geneplore.com/" class="flex items-center">
+                        <img src="/img/geneplore.png" class="geneplore2 mr-3" alt="logo" />
+                    </a>
+                    <p class="text-gray-600 text-lg dark:text-gray-400" style="width: 300px;">Geneplore - The world's
+                        easiest way to use AI from 2023</p>
+                </div>
+                <div class="grid grid-cols-2 gap-6 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Menu</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="index.html" class="hover:underline">Home</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">About</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="#" class="hover:underline">Services</a>
+                            </li>
+                            <li>
+                                <a href="https://geneplore.readme.io/reference/start" class="hover:underline">More</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="https://github.com/GeneploreAI/geneplore.com"
+                                    class="hover:underline ">Github</a>
+                            </li>
+                            <li>
+                                <a href="https://discord.gg/geneplore" class="hover:underline">Discord</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="https://policies.google.com/privacy?hl=en-US" class="hover:underline">Privacy
+                                    Policy</a>
+                            </li>
+                            <li>
+                                <a href="https://policies.google.com/privacy?hl=en-US" class="hover:underline">Terms
+                                    &amp; Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
+                        href="https://geneplore.com/" class="hover:underline">Geneplore</a>. All Rights Reserved.
+                </span>
+                <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+
+                    <a href="https://github.com/GeneploreAI/geneplore.com"
+                        class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">GitHub community</span>
+                    </a>
+                </div>
+            </div>
+        </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5S5LLC45RL"></script>
     <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-5S5LLC45RL');
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
     </script>
+    <script src="/site/js/home.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
 </body>
 
 </html>
