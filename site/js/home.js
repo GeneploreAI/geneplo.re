@@ -38,3 +38,16 @@ themeToggleBtn.addEventListener('click', function () {
     }
 
 });
+
+var modal = document.getElementById("cookies");
+
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function () {
+    modal.style.visibility = "hidden";
+}
+
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.visibility = "hidden";
+    }
+}
