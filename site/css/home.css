@@ -62,13 +62,6 @@ footer {
     width: 350px;
 }
 
-.bot-sec {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 150px;
-}
-
 .learn-more {
     position: relative;
     display: inline-flex;
@@ -95,6 +88,13 @@ footer {
     background: #9500ff;
     color: white;
     background-size: 100%;
+}
+
+.bot-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 150px;
 }
 
 @media screen and (max-width: 1170px) {
@@ -134,17 +134,48 @@ footer {
     .geneplore2 {
         width: 260px;
     }
+
+    .discord {
+        display: grid;
+        row-gap: 20px;
+    }
+
+    .api {
+        display: grid;
+        row-gap: 20px;
+    }
+
+    .bot-sec {
+        display: grid;
+        row-gap: 20px;
+    }
 }
 
-@media screen and (max-width:820) {
+@media screen and (max-width:820px) {
     .geneplore2 {
         width: 240px;
+    }
+
+    .geneplore {
+        width: 280px;
     }
 }
 
 @media screen and (max-width:790px) {
     .geneplore {
-        width: 240px;
+        width: 270px;
+    }
+}
+
+@media screen and (max-width:780px) {
+    .geneplore {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .geneplore {
+        width: 250px;
     }
 }
 
@@ -155,21 +186,6 @@ footer {
 
     .column {
         gap: 30px;
-    }
-
-    .bot-sec {
-        display: grid;
-        row-gap: 20px;
-    }
-
-    .discord {
-        display: grid;
-        row-gap: 20px;
-    }
-
-    .api {
-        display: grid;
-        row-gap: 20px;
     }
 
     .discord-title {
@@ -186,7 +202,7 @@ footer {
         font-family: 'Noto Sans';
         text-align: center;
     }
-    
+
 
     footer {
         height: 520px;
