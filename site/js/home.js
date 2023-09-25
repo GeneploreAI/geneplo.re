@@ -39,15 +39,43 @@ themeToggleBtn.addEventListener('click', function () {
 
 });
 
-var modal = document.getElementById("cookies");
+var themeToggleDarkIcon2 = document.getElementById('theme-toggle-dark-icon-2');
+var themeToggleLightIcon2 = document.getElementById('theme-toggle-light-icon-2');
 
-var span = document.getElementsByClassName("close")[0];
-span.onclick = function () {
-    modal.style.visibility = "hidden";
+// Change the icons inside the button based on previous settings
+if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+    themeToggleLightIcon2.classList.remove('hidden');
+} else {
+    themeToggleDarkIcon2.classList.remove('hidden');
 }
 
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.visibility = "hidden";
+var themeToggleBtn2 = document.getElementById('theme-toggle-2');
+
+themeToggleBtn2.addEventListener('click', function () {
+
+    // toggle icons inside button
+    themeToggleDarkIcon2.classList.toggle('hidden');
+    themeToggleLightIcon2.classList.toggle('hidden');
+
+    // if set via local storage previously
+    if (localStorage.getItem('color-theme')) {
+        if (localStorage.getItem('color-theme') === 'light') {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('color-theme', 'dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('color-theme', 'light');
+        }
+
+        // if NOT set via local storage previously
+    } else {
+        if (document.documentElement.classList.contains('dark')) {
+            document.documentElement.classList.remove('dark');
+            localStorage.setItem('color-theme', 'light');
+        } else {
+            document.documentElement.classList.add('dark');
+            localStorage.setItem('color-theme', 'dark');
+        }
     }
-}
+
+});
