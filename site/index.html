@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/site/static/img/small_logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/small_logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="/site/css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -145,14 +145,14 @@
                         <ul class="flex flex-col p-2 md:p-0 mt-4 nav-ul font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
                             style="font-size: 15px;">
                             <li>
-                                <a href="/site/index.html" class="nav-link" style="font-size: 15px;" aria-current="page">Home</a>
+                                <p class="nav-home" style="font-size: 15px;" aria-current="page">Home</p>
                             </li>
                             <li>
                                 <a href="#" class="dark:text-white nav-link" style="font-size: 15px;"
                                     aria-current="page">About us</a>
                             </li>
                             <li>
-                                <a href="https://discord.gg/geneplore" class="dark:text-white nav-link" style="font-size: 15px;">Subscribe</a>
+                                <a href="#" class="dark:text-white nav-link" style="font-size: 15px;">Subscribe</a>
                             </li>
                             <li>
                                 <a href="https://geneplore.readme.io/reference/start" class="dark:text-white nav-link"
@@ -454,7 +454,7 @@
                     <div class="py-4 overflow-y-auto mt-4">
                         <ul class="space-y-2 font-medium">
                             <li>
-                                <a href="/site/index.html" class="flex items-center p-2 text-white rounded-lg">
+                                <a href="#" class="flex items-center p-2 text-white rounded-lg">
                                     <svg class="w-5 h-5 text-white" aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -465,7 +465,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://discord.gg/geneplore"
+                                <a href="#"
                                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                                     <svg class="w-5 h-5 text-white" aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
@@ -510,6 +510,53 @@
                 </div>
             </div>
         </nav>
+        <!-- <div class="belowbar fixed bottom-0 right-0 left-0 z-50 w-full h-16 bg-white dark:bg-gray-600"
+            style="margin: auto;">
+            <div class="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
+                <button type="button"
+                    class="inline-flex border-l border-gray-300 dark:border-white flex-col items-center justify-center px-5 bg-blue-500">
+                    <svg class="w-6 h-6 mb-1 text-white" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path
+                            d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
+                        </path>
+                    </svg>
+                    <span style="font-size: 13px;" class="text-white">Home</span>
+                </button>
+                <button type="button"
+                    class="inline-flex border-l border-gray-300 dark:border-white flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="w-5 h-5 text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001" />
+                    </svg>
+                    <a class='text-sm text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500'
+                        href='#' style='font-size: 13px;'>About</a>
+                </button>
+                <button type="button"
+                    class="inline-flex border-l border-gray-300 dark:border-white flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                    <svg class="w-5 h-5 text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500"
+                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 9h2m3 0h5M1 5h18M2 1h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1Z" />
+                    </svg>
+                    <a class='text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500'
+                        href='#' style='font-size: 13px;'>Subscribe</a>
+                </button>
+                <button type="button"
+                    class="inline-flex border-l border-r border-gray-300 dark:border-white flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+                    <svg class="w-5 h-5 text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500"
+                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                        <path
+                            d="M9 1.334C7.06.594 1.646-.84.293.653a1.158 1.158 0 0 0-.293.77v13.973c0 .193.046.383.134.55.088.167.214.306.366.403a.932.932 0 0 0 .5.147c.176 0 .348-.05.5-.147 1.059-.32 6.265.851 7.5 1.65V1.334ZM19.707.653C18.353-.84 12.94.593 11 1.333V18c1.234-.799 6.436-1.968 7.5-1.65a.931.931 0 0 0 .5.147.931.931 0 0 0 .5-.148c.152-.096.279-.235.366-.403.088-.167.134-.357.134-.55V1.423a1.158 1.158 0 0 0-.293-.77Z" />
+                    </svg>
+                    <a class="text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500"
+                        href='https://geneplore.readme.io/reference/start' style='font-size: 13px;'>Article</a>
+                </button>
+
+            </div>
+        </div> -->
     </header>
     <main>
         <div id="sticky-banner" tabindex="-1" style="top: 60%; left: 1%;"
@@ -543,7 +590,7 @@
             </div>
         </div>
         <section
-            style="background-image: url(/site/static/img/banner.png); background-blend-mode: darken; background-size: 1440px; overflow-x: hidden;"
+            style="background-image: url(/img/banner.png); background-blend-mode: darken; background-size: 1440px; overflow-x: hidden;"
             class="bg-center bg-no-repeat bg-gray-700">
             <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
                 <h1 class="mb-4 text-4xl font-bold leading-none text-white md:text-5xl lg:text-6xl"
