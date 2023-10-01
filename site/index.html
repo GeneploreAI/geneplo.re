@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/small_logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/site/css/home.css">
+    <link rel="shortcut icon" href="static/img/small_logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -135,7 +135,7 @@
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
                 style="margin-top: -15px;">
                 <div class="flex items-center gap-8">
-                    <img class="geneplore" src="/img/geneplore.png" alt="logo">
+                    <img class="geneplore" src="static/img/geneplore.png" alt="logo">
                     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
                         id="navbar-search">
                         <div class="relative mt-3 md:hidden">
@@ -148,21 +148,18 @@
                                 <p class="nav-home" style="font-size: 15px;" aria-current="page">Home</p>
                             </li>
                             <li>
-                                <a href="#" class="dark:text-white nav-link" style="font-size: 15px;"
-                                    aria-current="page">About us</a>
-                            </li>
-                            <li>
-                                <a href="#" class="dark:text-white nav-link" style="font-size: 15px;">Subscribe</a>
+                                <a href="https://discord.com/channels/1092173065967911002/role-subscriptions" class="dark:text-white nav-link" style="font-size: 15px;">Subscribe</a>
                             </li>
                             <li>
                                 <a href="https://geneplore.readme.io/reference/start" class="dark:text-white nav-link"
-                                    style="font-size: 15px;">Article</a>
+                                    style="font-size: 15px;">Documentation</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="flex items-center" style="gap: 20px;">
                     <div class="flex items-center md:order-2" style="margin-left: -20px;">
+                        <!-- Dropdown
                         <button type="button" data-dropdown-toggle="language-dropdown-menu"
                             class="inline-flex lang-button items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
                             <svg aria-hidden="true" class="h-5 w-5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg"
@@ -191,12 +188,12 @@
                                 Eng
                             </span>
                         </button>
-                        <!-- Dropdown -->
+                        
                         <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
                             id="language-dropdown-menu">
                             <ul class="py-2 font-medium" role="none">
                                 <li>
-                                    <a href="/index.html"
+                                    <a href="index.html"
                                         class="block font-bold px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
                                         role="menuitem" style="font-family: 'Montserrat';">
                                         <div class="inline-flex items-center">
@@ -224,7 +221,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/site/de/deutsch.html"
+                                    <a href="de/deutsch.html"
                                         class="block font-bold px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
                                         role="menuitem" style="font-family: 'Montserrat';">
                                         <div class="inline-flex items-center">
@@ -240,7 +237,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/site/du/dutch.html"
+                                    <a href="du/dutch.html"
                                         class="block font-bold px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
                                         role="menuitem" style="font-family: 'Montserrat';">
                                         <div class="inline-flex items-center">
@@ -261,7 +258,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="/site/ru/russian.html"
+                                    <a href="ru/russian.html"
                                         class="block font-bold px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
                                         role="menuitem" style="font-family: 'Montserrat';">
                                         <div class="inline-flex items-center">
@@ -283,8 +280,9 @@
                                 </li>
                             </ul>
                         </div>
+                         -->
                         <div class="gap-2 flex items-center">
-                            <a href="https://discord.gg/geneplore">
+                            <a href="discord">
                                 <svg class="svg-icon text-gray-500 dark:text-white" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
                                     <path
@@ -367,7 +365,7 @@
                     class="fixed top-0 left-0 z-40 w-64 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white"
                     style="background: linear-gradient(45deg, #9d38b9, #470092);" tabindex="-1"
                     aria-labelledby="drawer-navigation-label">
-                    <img style="width: 150px; position: relative; top: -10px;" src="/img/geneplore.png" alt="logo">
+                    <img style="width: 150px; position: relative; top: -10px;" src="static/img/geneplore.png" alt="logo">
                     <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
                         class="text-white bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white">
                         <svg aria-hidden="true" class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20"
@@ -465,7 +463,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#"
+                                <a href="terms"
                                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                                     <svg class="w-5 h-5 text-white" aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
@@ -473,23 +471,11 @@
                                             stroke-width="2"
                                             d="M1 1v18M1 3.652v9c5.6-5.223 8.4 2.49 14-.08v-9c-5.6 2.57-8.4-5.143-14 .08Z" />
                                     </svg>
-                                    <span class="ml-3 text-white">About us</span>
+                                    <span class="ml-3 text-white">Terms</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#"
-                                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
-                                    <svg class="w-5 h-5 text-white" aria-hidden="true"
-                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 14">
-                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                            stroke-width="2"
-                                            d="M4 9h2m3 0h5M1 5h18M2 1h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1Z" />
-                                    </svg>
-                                    <span class="ml-3 text-white">Subscribe</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#"
+                                <a href="https://docs.geneplore.com"
                                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                                     <svg class="w-5 h-5 text-white" aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
@@ -497,14 +483,14 @@
                                             stroke-width="2"
                                             d="M1 17V2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a2 2 0 0 0-2 2Zm0 0a2 2 0 0 0 2 2h12M5 15V1m8 18v-4" />
                                     </svg>
-                                    <span class="ml-3 text-white">Article</span>
+                                    <span class="ml-3 text-white">Documentation</span>
                                 </a>
                             </li>
                         </ul>
                         <a style="margin-top: 100px;"
                             href="https://discord.com/application-directory/1089317211652509811"
                             class="inline-flex justify-center text-sm hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
-                            Add the bot to the server
+                            Add our bot to a server
                         </a>
                     </div>
                 </div>
@@ -559,85 +545,52 @@
         </div> -->
     </header>
     <main>
-        <div id="sticky-banner" tabindex="-1" style="top: 60%; left: 1%;"
-            class="fixed top-0 left-0 z-50 flex rounded-lg justify-between p-4 border border-gray-400 bg-purple-400"
-            style="max-width: 400%; width: 100%;">
-            <div class="relative rounded-lg bg-purple-400">
-                <div class="flex gap-2 items-start justify-between p-4 border-b rounded-t">
-                    <img src="https://www.svgrepo.com/show/30963/cookie.svg" width="35px" alt="...">
-                    <h3 class="text-xl font-semibold text-gray-900">
-                        We use cookie files
-                    </h3>
-                </div>
-                <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
-                    <button data-dismiss-target="#sticky-banner" type="button"
-                        class="text-white bg-indigo-900 hover:bg-blue-500 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center">
-                        Accept</button>
-                    <button data-dismiss-target="#sticky-banner" type="button"
-                        class="text-gray-500 bg-indigo-300 hover:bg-gray-100 focus:outline-none rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Decline</button>
-                </div>
-            </div>
-            <div class="flex items-center">
-                <button data-dismiss-target="#sticky-banner" style="position: relative; bottom: 43%;" type="button"
-                    class="flex-shrink-0 inline-flex justify-center w-7 h-7 items-center text-white hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5">
-                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 14 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
-                    </svg>
-                    <span class="sr-only">Close banner</span>
-                </button>
-            </div>
-        </div>
         <section
-            style="background-image: url(/img/banner.png); background-blend-mode: darken; background-size: 1440px; overflow-x: hidden;"
+            style="background-image: url(static/img/banner.png); background-blend-mode: darken; background-size: 1440px; overflow-x: hidden;"
             class="bg-center bg-no-repeat bg-gray-700">
             <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
                 <h1 class="mb-4 text-4xl font-bold leading-none text-white md:text-5xl lg:text-6xl"
                     style="font-family: 'Neue Haas Grotesk Display Pro';">
                     The world's easiest way to use AI</h1>
-                <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Join to our server and
-                    Our API and Discord bot provide access to many different world-class AIs, including ChatGPT, SDXL,
-                    and more, under one subscription.
+                <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Join our server and
+                    use our API and Discord bot which provide access to many different world-class AIs, including ChatGPT, SDXL,
+                    and more, all under one subscription.
                 </p>
                 <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-                    <a href="https://discord.gg/geneplore"
-                        class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-gradient-to-br from-purple-600 to-pink-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                        Join to the server
-                        <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 14 10">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 5h12m0 0L9 1m4 4L9 9" />
-                        </svg>
-                    </a>
-                    <a href="https://discord.com/application-directory/1089317211652509811"
-                        class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
-                        Add the bot to the server
-                    </a>
+                    <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+                        <a href="discord" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                            Get started
+                            <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
+                            </svg>
+                        </a>
+                        <a href="bot" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-gradient-to-br from-purple-600 to-pink-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                            Invite our Bot
+    
+                        </a><a href="https://docs.geneplore.com" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+                            Learn about our API
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
         <section class="stat-cards">
             <a
                 class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">More than 500k+ users
-                    trust our services</h5>
-                <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
-                    acquisitions of 2021 so far, in reverse chronological order.</p>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">More than 50k users trust us</h5>
+                <p class="font-normal text-gray-700 dark:text-gray-400">And we have over 175 paying subscribers</p>
             </a>
             <a
                 class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">220k+ servers utilizes
-                    our bot to socialize with AI</h5>
-                <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
-                    acquisitions of 2021 so far, in reverse chronological order.</p>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">23k+ servers use
+                    our AI bot</h5>
+                <p class="font-normal text-gray-700 dark:text-gray-400">Including r/ChatGPT, FlowGPT, LLM Promptwriting, and more.</p>
             </a>
             <a
                 class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">We reached about 60k
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Over 60k
                     conversations with AI models</h5>
-                <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
-                    acquisitions of 2021 so far, in reverse chronological order.</p>
+                <p class="font-normal text-gray-700 dark:text-gray-400">We have over 60k conversations, and over 200k AI generations.</p>
             </a>
         </section>
         <section style="margin-top: 100px;">
@@ -648,7 +601,7 @@
                         <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about"
                             aria-selected="true"
                             class="inline-block p-4 text-blue-600 rounded-tl-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500">Why
-                            bots</button>
+                            us</button>
                     </li>
                     <li class="mr-2">
                         <button id="services-tab" data-tabs-target="#services" type="button" role="tab"
@@ -915,12 +868,11 @@
         <section class="discord bg-gray-300 dark:bg-gray-700 p-8">
             <div class="grid gap-6" style="max-width: 500px; width: 100%">
                 <h1 class="font-bold text-4xl text-gray-900 dark:text-white discord-title">
-                    Title of description of our Discord server
+                    Geneplore AI Discord Server & Bot
                 </h1>
                 <p class="text-gray-600 dark:text-gray-100 text-lg discord-text" style="font-family: 'Noto Sans';">
-                    description (use chatgpt
-                    for help, he can write a huge amount of text)</p>
-                <a href="https://discord.gg/geneplore" type="button"
+                    Join us and discuss the future of AI with other AI enthusiasts, and use it right on Discord.</p>
+                <a href="discord" type="button"
                     class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Learn
                     more</a>
             </div>
@@ -932,11 +884,10 @@
         <section class="api bg-gray-300 dark:bg-gray-700 p-8">
             <div class="grid gap-6" style="max-width: 500px; width: 100%">
                 <h1 class="font-bold text-4xl text-gray-900 dark:text-white api-title">
-                    Title of description of API documentation
+                    Access any AI with one API
                 </h1>
                 <p class="text-gray-600 dark:text-gray-100 text-lg api-text" style="font-family: 'Noto Sans';">
-                    description (use chatgpt
-                    for help, he can write a huge amount of text)</p>
+                    Use 20+ models with only one API, one subscription, and one format.</p>
                 <a href="#" type="button"
                     class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Learn
                     more</a>
@@ -950,15 +901,12 @@
                     ChatGPT</h1>
                 <p style="font-family: 'Montserrat'; max-width: 500px; width: 100%;"
                     class="text-xl text-gray-500 font-bold dark:text-gray-300">
-                    ChatGPT can generate anything you wish for, from images, video, a chat conversation, and even code!
-                    Invite the bot to your server and experience the wonderful world of ChatGPT and AI with your
-                    friends.
-                    <br>
-                    <br>
-                    More detailed information you can find on our server!
-                    <br>
+                    ChatGPT can generate anything you wish for, from images, video, a chat conversation, and even code! Invite the bot to your server and experience the wonderful world of ChatGPT and AI with your friends.
+                    <br><br>
+                    More details available in the server.
+                    
                     <a class="learn-more border border-gray-800 border-b-2 dark:border-white dark:text-white"
-                        href="https://discord.gg/geneplore">Learn more</a>
+                        href="discord">Learn more</a>
                 </p>
             </div>
             <div style="background: linear-gradient(45deg, rgb(94, 0, 123), rgb(155, 0, 202),  rgb(225, 0, 225)); max-width: 550px; width: 100%; max-height: 550%; height: 100%; border-radius: 50%;"
@@ -977,28 +925,28 @@
                         <dl
                             class=" grid max-w-screen-xl grid-cols-2 gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-3 xl:grid-cols-6 dark:text-white sm:p-8">
                             <div class="flex flex-col items-center justify-center">
-                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">11k+</dt>
-                                <dd class="text-center text-white">Members</dd>
+                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">16k+</dt>
+                                <dd class="text-center text-white">Server Members</dd>
                             </div>
                             <div class="flex flex-col items-center justify-center">
-                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">100+</dt>
-                                <dd class="text-center text-white">Premium members</dd>
+                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">175+</dt>
+                                <dd class="text-center text-white">Paying Subscribers</dd>
                             </div>
                             <div class="flex flex-col items-center justify-center">
-                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">1</dt>
-                                <dd class="text-center text-white">Manager</dd>
+                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">23k+</dt>
+                                <dd class="text-center text-white">Servers</dd>
                             </div>
                             <div class="flex flex-col items-center justify-center">
-                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">6</dt>
-                                <dd class="text-center text-white">Moderators</dd>
+                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">50k+</dt>
+                                <dd class="text-center text-white">Active Users</dd>
                             </div>
                             <div class="flex flex-col items-center justify-center">
-                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">4</dt>
-                                <dd class="text-center text-white">Bots</dd>
+                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">60k+</dt>
+                                <dd class="text-center text-white">Conversations</dd>
                             </div>
                             <div class="flex flex-col items-center justify-center">
-                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">40+</dt>
-                                <dd class="text-center text-white">Voters</dd>
+                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">500k+</dt>
+                                <dd class="text-center text-white">Users</dd>
                             </div>
                         </dl>
                     </div>
@@ -1034,7 +982,7 @@
                         <div
                             class="mt-2 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <h5 class="flex items-center gap-2 mb-2 text-2xl font-medium tracking-tight text-black"><img
-                                    src="/img/discord-avatar.png" class="rounded-full" width="40px" height="40px"
+                                    src="static/img/small_logo.png" class="rounded-full" width="40px" height="40px"
                                     alt="..."> Subscriber <img
                                     src="https://media.discordapp.net/attachments/1101297285196951612/1112016248734220441/black-openai.png?width=25&height=25"
                                     alt="..."></h5>
@@ -1093,7 +1041,7 @@
                         <div
                             class="mt-2 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <h5 class="flex items-center gap-2 mb-2 text-2xl font-medium tracking-tight text-green-400">
-                                <img src="/img/discord-avatar.png" class="rounded-full" width="40px" height="40px"
+                                <img src="static/img/small_logo.png" class="rounded-full" width="40px" height="40px"
                                     alt="..."> Subscriber <img width="25px" height="25px"
                                     src="https://cdn.discordapp.com/attachments/1031244802588672030/1146418327800008784/chatgpt-logo-chat-gpt-icon-on-green-background-free-vector.png"
                                     alt="...">
@@ -1157,7 +1105,7 @@
                         <div
                             class="mt-2 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <h5 class="flex items-center gap-2 mb-2 text-2xl font-medium tracking-tight"
-                                style="color: #ff2dab;"><img class="rounded-full" src="/img/discord-avatar.png"
+                                style="color: #ff2dab;"><img class="rounded-full" src="static/img/small_logo.png"
                                     width="40px" height="40px" alt="..."> Subscriber <img
                                     src="https://media.discordapp.net/attachments/1101297285196951612/1112016248998469632/color-openai.png?width=25&height=25"
                                     alt="..."></h5>
@@ -1221,21 +1169,20 @@
                         style="margin: auto; max-width: 250px; width: 100%; height: auto;" alt="" />
                 </a>
                 <div class="p-5">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-center gradient-text">Premium Category</h5>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Premium role on our server is the value
-                        for those who got signed up for sponsorship (Basic, Pro, Ultra)</p>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-center gradient-text">Server Premium</h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Buy Server Premium and give subscriber benefits to everyone in a server for cheap!</p>
                     <div class="grid mt-8">
                         <h5 class="text-lg font-bold text-gray-500 dark:text-white pl-2 text-center">BENEFITS</h5>
                         <p class="mt-4 font-bold text-gray-600 dark:text-white pl-2 text-md"
-                            style="font-family: 'Montserrat';">1. Access to the unique channels</p>
+                            style="font-family: 'Montserrat';">1. Premium Models and Personalities</p>
                         <p class="font-bold text-gray-600 dark:text-white pl-2 text-md"
-                            style="font-family: 'Montserrat';">2. Everyday credits for AI using</p>
+                            style="font-family: 'Montserrat';">2. Editable Bot Nickname</p>
                         <p class="font-bold text-gray-600 dark:text-white pl-2 text-md"
-                            style="font-family: 'Montserrat';">3. Access to the Premium AI models</p>
+                            style="font-family: 'Montserrat';">3. Premium Support</p>
                         <p class="font-bold text-gray-600 dark:text-white pl-2 text-md"
-                            style="font-family: 'Montserrat';">4. Everything that's written above</p>
+                            style="font-family: 'Montserrat';">4. No Advertisements</p>
                     </div>
-                    <a href="#"
+                    <a href="discord"
                         class="mt-8 relative inline-flex items-center justify-center px-0.5 py-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
                         <span style="font-family: 'Montserrat';"
                             class="relative font-bold py-2.5 px-5 transition-all ease-in duration-75 bg-white dark:bg-gray-800 rounded-md group-hover:bg-opacity-0">
@@ -1252,10 +1199,10 @@
             <div class="md:flex md:items-center" style="gap: 100px; justify-content: space-around;">
                 <div class="mb-6 md:mb-0">
                     <a href="https://geneplore.com/" class="flex items-center">
-                        <img src="/img/geneplore.png" class="geneplore2 mr-3" alt="logo" />
+                        <img src="static/img/geneplore.png" class="geneplore2 mr-3" alt="logo" />
                     </a>
                     <p class="text-gray-600 text-lg dark:text-gray-400" style="width: 300px;">Geneplore - The world's
-                        easiest way to use AI from 2023</p>
+                        easiest way to use AI in 2023</p>
                 </div>
                 <div class="grid grid-cols-2 gap-6 sm:gap-6 sm:grid-cols-3">
                     <div>
@@ -1283,7 +1230,7 @@
                                     class="und-link ">Github</a>
                             </li>
                             <li>
-                                <a href="https://discord.gg/geneplore" class="und-link">Discord</a>
+                                <a href="discord" class="und-link">Discord</a>
                             </li>
                         </ul>
                     </div>
@@ -1321,7 +1268,7 @@
                         <span class="sr-only">GitHub community</span>
                     </a>
                     <a class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-                        href="https://discord.gg/geneplore">
+                        href="discord">
                         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 21 16">
                             <path
@@ -1340,7 +1287,7 @@
             document.documentElement.classList.remove('dark')
         }
     </script>
-    <script src="/site/js/home.js"></script>
+    <script src="js/home.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
 </body>
 
