@@ -135,7 +135,9 @@
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
                 style="margin-top: -15px;">
                 <div class="flex items-center gap-8">
+
                     <img class="geneplore" src="static/img/geneplore.png" alt="logo">
+
                     <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
                         id="navbar-search">
                         <div class="relative mt-3 md:hidden">
@@ -145,55 +147,47 @@
                         <ul class="flex flex-col p-2 md:p-0 mt-4 nav-ul font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
                             style="font-size: 15px;">
                             <li>
-                                <p class="nav-home" style="font-size: 15px;" aria-current="page">Home</p>
+                                <p class="nav-home" style="font-size: 15px;" aria-current="page">Heim</p>
                             </li>
                             <li>
-                                <a href="https://discord.com/channels/1092173065967911002/role-subscriptions" class="dark:text-white nav-link" style="font-size: 15px;">Subscribe</a>
+                                <a href="#" class="dark:text-white nav-link" style="font-size: 15px;"
+                                    aria-current="page">Über uns</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dark:text-white nav-link" style="font-size: 15px;">Abonnieren</a>
                             </li>
                             <li>
                                 <a href="https://geneplore.readme.io/reference/start" class="dark:text-white nav-link"
-                                    style="font-size: 15px;">Documentation</a>
+                                    style="font-size: 15px;">Artikel</a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="flex items-center" style="gap: 20px;">
                     <div class="flex items-center md:order-2" style="margin-left: -20px;">
-                        <!-- Dropdown
                         <button type="button" data-dropdown-toggle="language-dropdown-menu"
                             class="inline-flex lang-button items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-white rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">
-                            <svg aria-hidden="true" class="h-5 w-5 rounded-full mr-2" xmlns="http://www.w3.org/2000/svg"
-                                id="flag-icon-css-us" viewBox="0 0 512 512">
-                                <g fill-rule="evenodd">
-                                    <g stroke-width="1pt">
-                                        <path fill="#bd3d44"
-                                            d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
-                                            transform="scale(3.9385)" />
-                                        <path fill="#fff"
-                                            d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
-                                            transform="scale(3.9385)" />
-                                    </g>
-                                    <path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)" />
-                                    <path fill="#fff"
-                                        d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z"
-                                        transform="scale(3.9385)" />
-                                </g>
+                            <svg class="h-5 w-5 rounded-full mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                id="flag-icon-css-de" viewBox="0 0 512 512">
+                                <path fill="#ffce00" d="M0 341.3h512V512H0z" />
+                                <path d="M0 0h512v170.7H0z" />
+                                <path fill="#d00" d="M0 170.7h512v170.6H0z" />
                             </svg>
                             <span class="font-bold text-gray-600 dark:text-white lang-span"
                                 style="font-family: 'Montserrat';">
-                                English (US)
+                                Deutsch
                             </span>
                             <span class="font-bold text-gray-600 dark:text-white lang-span2"
                                 style="font-family: 'Montserrat';">
-                                Eng
+                                Deu
                             </span>
                         </button>
-                        
+                        <!-- Dropdown -->
                         <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
                             id="language-dropdown-menu">
                             <ul class="py-2 font-medium" role="none">
                                 <li>
-                                    <a href="index.html"
+                                    <a href="/index.html"
                                         class="block font-bold px-4 py-2 text-sm text-gray-600 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-white"
                                         role="menuitem" style="font-family: 'Montserrat';">
                                         <div class="inline-flex items-center">
@@ -216,7 +210,7 @@
                                                         transform="scale(3.9385)" />
                                                 </g>
                                             </svg>
-                                            English (US)
+                                            Englisch (US)
                                         </div>
                                     </a>
                                 </li>
@@ -232,7 +226,7 @@
                                                 <path d="M0 0h512v170.7H0z" />
                                                 <path fill="#d00" d="M0 170.7h512v170.6H0z" />
                                             </svg>
-                                            German
+                                            Deutsch
                                         </div>
                                     </a>
                                 </li>
@@ -253,7 +247,7 @@
                                                     d="M3.7 22C2.6 25.1 2 28.5 2 32s.6 6.9 1.7 10h56.6c1.1-3.1 1.7-6.5 1.7-10s-.6-6.9-1.7-10H3.7"
                                                     fill="#ffffff"></path>
                                             </svg>
-                                            Dutch
+                                            Niederländisch
                                         </div>
                                     </a>
                                 </li>
@@ -274,15 +268,14 @@
                                                     d="M3.7 22C2.6 25.1 2 28.5 2 32s.6 6.9 1.7 10h56.6c1.1-3.1 1.7-6.5 1.7-10s-.6-6.9-1.7-10H3.7"
                                                     fill="#0000ff"></path>
                                             </svg>
-                                            Russian
+                                            Russisch
                                         </div>
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                         -->
                         <div class="gap-2 flex items-center">
-                            <a href="discord">
+                            <a href="/discord">
                                 <svg class="svg-icon text-gray-500 dark:text-white" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
                                     <path
@@ -395,22 +388,11 @@
                         <div class="flex items-center" style="gap: 0.001px; margin-left: 65px;">
                             <button type="button" data-dropdown-toggle="language-dropdown-menu"
                                 class="inline-flex items-center font-medium justify-center p-2 text-sm text-white rounded-lg ">
-                                <svg aria-hidden="true" class="h-5 w-5 text-white rounded-full mr-2"
-                                    xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-us" viewBox="0 0 512 512">
-                                    <g fill-rule="evenodd">
-                                        <g stroke-width="1pt">
-                                            <path fill="#bd3d44"
-                                                d="M0 0h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
-                                                transform="scale(3.9385)" />
-                                            <path fill="#fff"
-                                                d="M0 10h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0zm0 20h247v10H0z"
-                                                transform="scale(3.9385)" />
-                                        </g>
-                                        <path fill="#192f5d" d="M0 0h98.8v70H0z" transform="scale(3.9385)" />
-                                        <path fill="#fff"
-                                            d="M8.2 3l1 2.8H12L9.7 7.5l.9 2.7-2.4-1.7L6 10.2l.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7L74 8.5l-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 7.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 24.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 21.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 38.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 35.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 52.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 49.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm-74.1 7l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7H65zm16.4 0l1 2.8H86l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm-74 7l.8 2.8h3l-2.4 1.7.9 2.7-2.4-1.7L6 66.2l.9-2.7-2.4-1.7h3zm16.4 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8H45l-2.4 1.7 1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9zm16.4 0l1 2.8h2.8l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h3zm16.5 0l.9 2.8h2.9l-2.3 1.7.9 2.7-2.4-1.7-2.3 1.7.9-2.7-2.4-1.7h2.9zm16.5 0l.9 2.8h2.9L92 63.5l1 2.7-2.4-1.7-2.4 1.7 1-2.7-2.4-1.7h2.9z"
-                                            transform="scale(3.9385)" />
-                                    </g>
+                                <svg class="h-5 w-5 rounded-full mr-2" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" id="flag-icon-css-de" viewBox="0 0 512 512">
+                                    <path fill="#ffce00" d="M0 341.3h512V512H0z" />
+                                    <path d="M0 0h512v170.7H0z" />
+                                    <path fill="#d00" d="M0 170.7h512v170.6H0z" />
                                 </svg>
                             </button>
                             <button id="theme-toggle-2" type="button"
@@ -459,11 +441,11 @@
                                             stroke-width="2"
                                             d="M3 8v10a1 1 0 0 0 1 1h4v-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5h4a1 1 0 0 0 1-1V8M1 10l9-9 9 9" />
                                     </svg>
-                                    <span class="ml-3 text-white">Home</span>
+                                    <span class="text-white ml-3">Heim</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="terms"
+                                <a href="#"
                                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                                     <svg class="w-5 h-5 text-white" aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
@@ -471,11 +453,23 @@
                                             stroke-width="2"
                                             d="M1 1v18M1 3.652v9c5.6-5.223 8.4 2.49 14-.08v-9c-5.6 2.57-8.4-5.143-14 .08Z" />
                                     </svg>
-                                    <span class="ml-3 text-white">Terms</span>
+                                    <span class="text-white ml-3">Über uns</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://docs.geneplore.com"
+                                <a href="#"
+                                    class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                                    <svg class="w-5 h-5 text-white" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 14">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M4 9h2m3 0h5M1 5h18M2 1h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1Z" />
+                                    </svg>
+                                    <span class="text-white ml-3">Abonnieren</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
                                     class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
                                     <svg class="w-5 h-5 text-white" aria-hidden="true"
                                         xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 20">
@@ -483,14 +477,14 @@
                                             stroke-width="2"
                                             d="M1 17V2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a2 2 0 0 0-2 2Zm0 0a2 2 0 0 0 2 2h12M5 15V1m8 18v-4" />
                                     </svg>
-                                    <span class="ml-3 text-white">Documentation</span>
+                                    <span class="ml-3 text-white">Artikel</span>
                                 </a>
                             </li>
                         </ul>
                         <a style="margin-top: 100px;"
                             href="https://discord.com/application-directory/1089317211652509811"
                             class="inline-flex justify-center text-sm hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
-                            Add our bot to a server
+                            Fügen Sie den Bot zum Server hinzu
                         </a>
                     </div>
                 </div>
@@ -518,7 +512,7 @@
                             d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12.435 12.435 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A19.626 19.626 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a19.587 19.587 0 0 0 1.349-.476l.019-.007.004-.002h.001" />
                     </svg>
                     <a class='text-sm text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500'
-                        href='#' style='font-size: 13px;'>About</a>
+                        href='#' style='font-size: 13px;'>Über uns</a>
                 </button>
                 <button type="button"
                     class="inline-flex border-l border-gray-300 dark:border-white flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
@@ -528,7 +522,7 @@
                             d="M4 9h2m3 0h5M1 5h18M2 1h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1Z" />
                     </svg>
                     <a class='text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500'
-                        href='#' style='font-size: 13px;'>Subscribe</a>
+                        href='#' style='font-size: 13px;'>Abonnieren</a>
                 </button>
                 <button type="button"
                     class="inline-flex border-l border-r border-gray-300 dark:border-white flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
@@ -538,59 +532,91 @@
                             d="M9 1.334C7.06.594 1.646-.84.293.653a1.158 1.158 0 0 0-.293.77v13.973c0 .193.046.383.134.55.088.167.214.306.366.403a.932.932 0 0 0 .5.147c.176 0 .348-.05.5-.147 1.059-.32 6.265.851 7.5 1.65V1.334ZM19.707.653C18.353-.84 12.94.593 11 1.333V18c1.234-.799 6.436-1.968 7.5-1.65a.931.931 0 0 0 .5.147.931.931 0 0 0 .5-.148c.152-.096.279-.235.366-.403.088-.167.134-.357.134-.55V1.423a1.158 1.158 0 0 0-.293-.77Z" />
                     </svg>
                     <a class="text-gray-500 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-500"
-                        href='https://geneplore.readme.io/reference/start' style='font-size: 13px;'>Article</a>
+                        href='https://geneplore.readme.io/reference/start' style='font-size: 13px;'>Artikel</a>
                 </button>
-
             </div>
         </div> -->
     </header>
     <main>
+        <div id="sticky-banner" tabindex="-1" style="top: 60%; left: 1%;"
+            class="fixed top-0 left-0 z-50 flex rounded-lg justify-between p-4 border border-gray-400 bg-purple-400"
+            style="max-width: 400%; width: 100%;">
+            <div class="relative rounded-lg bg-purple-400">
+                <div class="flex gap-2 items-start justify-between p-4 border-b rounded-t">
+                    <img src="https://www.svgrepo.com/show/30963/cookie.svg" width="35px" alt="...">
+                    <h3 class="text-xl font-semibold text-gray-900">
+                        Wir verwenden Cookies
+                    </h3>
+                </div>
+                <div class="flex items-center p-6 space-x-2 border-t border-gray-200 rounded-b">
+                    <button data-dismiss-target="#sticky-banner" type="button"
+                        class="text-white bg-indigo-900 hover:bg-blue-500 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center">
+                        Akzeptieren</button>
+                    <button data-dismiss-target="#sticky-banner" type="button"
+                        class="text-gray-500 bg-indigo-300 hover:bg-gray-100 focus:outline-none rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10">Abfall</button>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <button data-dismiss-target="#sticky-banner" style="position: relative; bottom: 43%;" type="button"
+                    class="flex-shrink-0 inline-flex justify-center w-7 h-7 items-center text-white hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5">
+                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 14 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+                    </svg>
+                    <span class="sr-only">Close banner</span>
+                </button>
+            </div>
+        </div>
         <section
             style="background-image: url(static/img/banner.png); background-blend-mode: darken; background-size: 1440px; overflow-x: hidden;"
             class="bg-center bg-no-repeat bg-gray-700">
             <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
                 <h1 class="mb-4 text-4xl font-bold leading-none text-white md:text-5xl lg:text-6xl"
                     style="font-family: 'Neue Haas Grotesk Display Pro';">
-                    The world's easiest way to use AI</h1>
-                <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Join our server and
-                    use our API and Discord bot which provide access to many different world-class AIs, including ChatGPT, SDXL,
-                    and more, all under one subscription.
+                    Der weltweit einfachste Weg, KI zu nutzen</h1>
+                <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+                    Treten Sie unserem Server bei und unsere API und unser Discord-Bot bieten im Rahmen eines
+                    Abonnements Zugriff auf viele verschiedene erstklassige KIs, darunter ChatGPT, SDXL und mehr.
                 </p>
                 <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-                    <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
-                        <a href="discord" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                            Get started
-                            <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"></path>
-                            </svg>
-                        </a>
-                        <a href="bot" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-gradient-to-br from-purple-600 to-pink-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
-                            Invite our Bot
-    
-                        </a><a href="https://docs.geneplore.com" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
-                            Learn about our API
-                        </a>
-                    </div>
+                    <a href="/discord"
+                        class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-gradient-to-br from-purple-600 to-pink-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800">
+                        Treten Sie dem Server bei
+                        <svg class="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 14 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 5h12m0 0L9 1m4 4L9 9" />
+                        </svg>
+                    </a>
+                    <a href="https://discord.com/application-directory/1089317211652509811"
+                        class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
+                        Fügen Sie den Bot zum Server hinzu
+                    </a>
                 </div>
             </div>
         </section>
         <section class="stat-cards">
             <a
                 class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">More than 50k users trust us</h5>
-                <p class="font-normal text-gray-700 dark:text-gray-400">And we have over 175 paying subscribers</p>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Mehr als 500.000
+                    Benutzer vertrauen unseren Diensten</h5>
+                <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                    acquisitions of 2021 so far, in reverse chronological order.</p>
             </a>
             <a
                 class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">23k+ servers use
-                    our AI bot</h5>
-                <p class="font-normal text-gray-700 dark:text-gray-400">Including r/ChatGPT, FlowGPT, LLM Promptwriting, and more.</p>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Über 220.000 Server
+                    nutzen unseren Bot, um mit KI in Kontakt zu treten</h5>
+                <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                    acquisitions of 2021 so far, in reverse chronological order.</p>
             </a>
             <a
                 class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Over 60k
-                    conversations with AI models</h5>
-                <p class="font-normal text-gray-700 dark:text-gray-400">We have over 60k conversations, and over 200k AI generations.</p>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Wir haben etwa 60.000
+                    Gespräche mit KI-Modellen erreicht</h5>
+                <p class="font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology
+                    acquisitions of 2021 so far, in reverse chronological order.</p>
             </a>
         </section>
         <section style="margin-top: 100px;">
@@ -600,37 +626,36 @@
                     <li class="mr-2">
                         <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about"
                             aria-selected="true"
-                            class="inline-block p-4 text-blue-600 rounded-tl-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500">Why
-                            us</button>
+                            class="inline-block p-4 text-blue-600 rounded-tl-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500">Warum
+                            Bots</button>
                     </li>
                     <li class="mr-2">
                         <button id="services-tab" data-tabs-target="#services" type="button" role="tab"
                             aria-controls="services" aria-selected="false"
-                            class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300">Services</button>
+                            class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300">Diensten</button>
                     </li>
                     <li class="mr-2">
                         <button id="team-tab" data-tabs-target="#team" type="button" role="tab" aria-controls="team"
                             aria-selected="false"
-                            class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300">Our
-                            team</button>
+                            class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300">Unser
+                            Team</button>
                     </li>
                 </ul>
                 <div id="defaultTabContent">
                     <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="about" role="tabpanel"
                         aria-labelledby="about-tab">
-                        <h2 class="mb-3 text-3xl font-extrabold tracking-tight text-gray-700 dark:text-white">Why choose
-                            us?</h2>
-                        <p class="mb-3 text-gray-500 dark:text-gray-400" style="max-width: 500px; width: 100%;">Instead
-                            of subscribing to
-                            tons of different AI
-                            services and learning all of the documentation for them, you can use one format, one
-                            subscription, and one API for all of your AI needs.</p>
+                        <h2 class="mb-3 text-3xl font-extrabold tracking-tight text-gray-700 dark:text-white">Warum uns
+                            wählen?</h2>
+                        <p class="mb-3 text-gray-500 dark:text-gray-400" style="max-width: 500px; width: 100%;">Anstatt
+                            unzählige
+                            verschiedene KI-Dienste zu abonnieren und die gesamte Dokumentation dafür zu lernen, können
+                            Sie ein Format, ein Abonnement und eine API für alle Ihre KI-Anforderungen verwenden.</p>
                         <img style="max-width: 800px; width: 100%; height: auto;" class="rounded-lg"
                             src="https://assets.gatesnotes.com/8a5ac0b3-6095-00af-c50a-89056fbe4642/e675f5c2-624b-4efd-b82f-99e8a6ed968b/AI_20230215_new%20module_1200x580.jpg"
                             alt="...">
                         <a href="https://geneplore.readme.io/reference/start"
                             class="und-link items-center mt-4 font-medium text-purple-600 hover:text-purple-800 dark:text-purple-500 dark:hover:text-purple-600">
-                            Learn More
+                            Mehr wissen
                             <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 6 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -640,8 +665,8 @@
                     </div>
                     <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="services" role="tabpanel"
                         aria-labelledby="services-tab">
-                        <h2 class="mb-5 text-2xl font-extrabold tracking-tight text-gray-700 dark:text-white">We provide
-                            the following AIs</h2>
+                        <h2 class="mb-5 text-2xl font-extrabold tracking-tight text-gray-700 dark:text-white">
+                            Wir bieten folgende KIs an</h2>
                         <!-- List -->
                         <ul role="list" class="space-y-4 text-gray-500 dark:text-gray-400">
                             <li class="flex space-x-2 items-center">
@@ -650,7 +675,8 @@
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="2" d="m7 10 2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                 </svg>
-                                <span class="leading-tight">ChatGPT and other LLMs like LLaMA 2, PaLM 2, and more</span>
+                                <span class="leading-tight">ChatGPT und andere
+                                    LLMs wie LLaMA 2, PaLM 2 und mehr</span>
                             </li>
                             <li class="flex space-x-2 items-center">
                                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
@@ -658,8 +684,8 @@
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="2" d="m7 10 2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                 </svg>
-                                <span class="leading-tight">Stable Diffusion XL, DALL-E 2, Kandinsky 2.1, and
-                                    more</span>
+                                <span class="leading-tight">Stabile Diffusion XL, DALL-E 2, Kandinsky 2.1 und
+                                    mehr</span>
                             </li>
                             <li class="flex space-x-2 items-center">
                                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
@@ -667,7 +693,7 @@
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="2" d="m7 10 2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                 </svg>
-                                <span class="leading-tight">Video Generation with DAMO Text-To-Video and more</span>
+                                <span class="leading-tight">Videogenerierung mit DAMO Text-To-Video und mehr</span>
                             </li>
                             <li class="flex space-x-2 items-center">
                                 <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
@@ -675,16 +701,17 @@
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                         stroke-width="2" d="m7 10 2 2 4-4m6 2a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
                                 </svg>
-                                <span class="leading-tight">Auto-Moderation with Perspective API & OpenAI's
-                                    endpoint</span>
+                                <span class="leading-tight">Automatische Moderation mit Perspective API & OpenAI’s.
+                                    Endpunkt</span>
                             </li>
                         </ul>
                         <img style="width: auto; height: auto; margin-left: 10px; margin-top: 20px; max-width: 800px; width: 100%;"
+                            class="rounded-full"
                             src="https://www.forbes.com/advisor/wp-content/uploads/2022/09/Image_-_MSP_.jpeg.jpg"
-                            class="rounded-full" alt="...">
+                            alt="...">
                         <a href="https://geneplore.readme.io/reference/start"
                             class="und-link items-center mt-4 font-medium text-purple-600 hover:text-purple-800 dark:text-purple-500 dark:hover:text-purple-600">
-                            Learn More
+                            Mehr wissen
                             <svg class="w-2.5 h-2.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                                 fill="none" viewBox="0 0 6 10">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -695,7 +722,7 @@
                     <div class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800" id="team" role="tabpanel"
                         aria-labelledby="team-tab">
                         <h1 class="mb-6 text-2xl text-center font-bold tracking-tight text-gray-900 dark:text-white"
-                            style="padding-top: 10px;">Owners
+                            style="padding-top: 10px;">Besitzer
                         </h1>
                         <div class="column">
                             <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
@@ -711,9 +738,8 @@
                                         thegamebegins25
                                     </h5>
 
-                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Mastermind behind
-                                        groundbreaking technologies: Meet the innovative Founder/CEO and Lead Developer
-                                        revolutionizing the industry</p>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Mastermind behind.
+                                        bahnbrechende Technologien: Treffen Sie den innovativen Gründer/CEO und Lead</p>
                                 </div>
                             </div>
                             <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
@@ -729,9 +755,8 @@
                                         Rillaboom27
                                     </h5>
 
-                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Engage and Foster a
-                                        Thriving Discord Community as Our Dedicated Community Manage, best support of
-                                        the company who has built the whole active on the server</p>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Engagieren Sie sich und
+                                        fördern Sie eine blühende Discord-Community als unsere engagierte Community</p>
                                 </div>
                             </div>
                         </div>
@@ -753,9 +778,11 @@
                                             Thegamebegins25
                                         </h5>
                                     </a>
-                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Transforming the
-                                        digital landscape through proactive problem-solving: Streamlining innovation as
-                                        a Lead Developer specializing in Bot, API, and Website Development</p>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Verwandlung der
+                                        digitale Landschaft durch proaktive Problemlösung: Rationalisierung von
+                                        Innovationen als
+                                        ein leitender Entwickler, der sich auf Bot-, API- und Website-Entwicklung
+                                        spezialisiert hat</p>
                                 </div>
                             </div>
                             <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
@@ -772,9 +799,9 @@
                                             Night1ngale :3
                                         </h5>
                                     </a>
-                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Transforming Your Web
-                                        Experience: Seeking an Ultimate Talented Web Developer and Deserved Designer:
-                                        Igniting Creativity on Geneplore Company</p>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Transformieren Sie Ihr
+                                        Web-Erlebnis: Suchen Sie einen äußerst talentierten Webentwickler und verdienten
+                                        Designer: Entfachen Sie die Kreativität bei Geneplore Company</p>
                                 </div>
                             </div>
                             <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
@@ -791,9 +818,9 @@
                                             KNAX
                                         </h5>
                                     </a>
-                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Master the Craft of Web
-                                        Development: Expert Backend Programmer, Innovative Designer, and Exceptional Web
-                                        Developer of Geneplore Company</p>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Meistern Sie das
+                                        Handwerk der Webentwicklung: Erfahrener Backend-Programmierer, innovativer
+                                        Designer und außergewöhnlicher Webentwickler der Geneplore Company</p>
                                 </div>
                             </div>
                         </div>
@@ -815,10 +842,10 @@
                                             YourAverageDev
                                         </h5>
                                     </a>
-                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Proficient API
-                                        Developer Excelling in Both Backend and Frontend, Expertly Leveraging Ideal
-                                        Connectivity with Mastering Full Stack API Development with Expertise in Backend
-                                        and Frontend Integration</p>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Kompetenter
+                                        API-Entwickler, der sich sowohl im Backend als auch im Frontend auszeichnet, die
+                                        ideale Konnektivität gekonnt nutzt und die Full-Stack-API-Entwicklung mit
+                                        Fachwissen in der Backend- und Frontend-Integration beherrscht</p>
                                 </div>
                             </div>
                             <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
@@ -835,9 +862,11 @@
                                             Thegamebegins25
                                         </h5>
                                     </a>
-                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Transforming the
-                                        digital landscape through proactive problem-solving: Streamlining innovation as
-                                        a Lead Developer specializing in Bot, API, and Website Development</p>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Verwandlung der
+                                        digitale Landschaft durch proaktive Problemlösung: Rationalisierung von
+                                        Innovationen als
+                                        ein leitender Entwickler, der sich auf Bot-, API- und Website-Entwicklung
+                                        spezialisiert hat</p>
                                 </div>
                             </div>
                             <div class="bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
@@ -854,9 +883,10 @@
                                             Delamcode
                                         </h5>
                                     </a>
-                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Awesome programmer in
-                                        different fields of programming languages, a rich and varied programmer in every
-                                        sense of the word, has a talent for API keys</p>
+                                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Toller Programmierer in
+                                        verschiedene Bereiche der Programmiersprachen, ein reicher und vielseitiger
+                                        Programmierer in jedem
+                                        Im wahrsten Sinne des Wortes hat er ein Talent für API-Schlüssel</p>
                                 </div>
                             </div>
                         </div>
@@ -871,10 +901,10 @@
                     Geneplore AI Discord Server & Bot
                 </h1>
                 <p class="text-gray-600 dark:text-gray-100 text-lg discord-text" style="font-family: 'Noto Sans';">
-                    Join us and discuss the future of AI with other AI enthusiasts, and use it right on Discord.</p>
-                <a href="discord" type="button"
-                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Learn
-                    more</a>
+                    Nutzen Sie alle unsere KIs mit unserem hochmodernen Discord-Bot</p>
+                <a href="/discord" type="button"
+                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Mehr
+                    wissen</a>
             </div>
             <img style="max-width: 400px; width: 100%; height: auto; margin: auto;"
                 src="https://wallpapers.com/images/hd/discord-logo-geometric-art-5barh6w9jxj5mhzw.jpg"
@@ -884,13 +914,13 @@
         <section class="api bg-gray-300 dark:bg-gray-700 p-8">
             <div class="grid gap-6" style="max-width: 500px; width: 100%">
                 <h1 class="font-bold text-4xl text-gray-900 dark:text-white api-title">
-                    Access any AI with one API
+                    Greifen Sie mit einer API auf jede KI zu
                 </h1>
                 <p class="text-gray-600 dark:text-gray-100 text-lg api-text" style="font-family: 'Noto Sans';">
-                    Use 20+ models with only one API, one subscription, and one format.</p>
+                    Use 20+ models with only one API, one subscription, and one format. </p>
                 <a href="#" type="button"
-                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Learn
-                    more</a>
+                    class="text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Mehr
+                    wissen</a>
             </div>
             <img style="max-width: 400px; width: 100%; height: auto; margin: auto;"
                 src="https://appmaster.io/api/_files/PqV7MuNwv89GrZvBd4LNNK/download/" class="rounded-lg" alt="...">
@@ -901,12 +931,15 @@
                     ChatGPT</h1>
                 <p style="font-family: 'Montserrat'; max-width: 500px; width: 100%;"
                     class="text-xl text-gray-500 font-bold dark:text-gray-300">
-                    ChatGPT can generate anything you wish for, from images, video, a chat conversation, and even code! Invite the bot to your server and experience the wonderful world of ChatGPT and AI with your friends.
-                    <br><br>
-                    More details available in the server.
-                    
+                    ChatGPT kann alles generieren, was Sie sich wünschen, von Bildern, Videos, einer Chat-Konversation
+                    und sogar Code! Laden Sie den Bot auf Ihren Server ein und erleben Sie mit Ihren Freunden die
+                    wunderbare Welt von ChatGPT und KI.
+                    <br>
+                    <br>
+                    Genauere Informationen finden Sie auf unserem Server!
+                    <br>
                     <a class="learn-more border border-gray-800 border-b-2 dark:border-white dark:text-white"
-                        href="discord">Learn more</a>
+                        href="/discord">Mehr wissen</a>
                 </p>
             </div>
             <div style="background: linear-gradient(45deg, rgb(94, 0, 123), rgb(155, 0, 202),  rgb(225, 0, 225)); max-width: 550px; width: 100%; max-height: 550%; height: 100%; border-radius: 50%;"
@@ -916,7 +949,7 @@
             </div>
         </section>
         <section style="margin-top: 200px;">
-            <h1 class="tracking-tight text-center font-bold text-4xl dark:text-white">Statistics</h1>
+            <h1 class="tracking-tight text-center font-bold text-4xl dark:text-white">Statistiken</h1>
             <div class="border-t border-gray-200 dark:border-gray-600" style="margin-top: 50px;">
                 <section
                     style="background-image: url(https://eige.europa.eu/sites/default/files/images/indicators.jpg); background-blend-mode: multiply; background-size: 1540px; overflow: hidden;"
@@ -925,28 +958,29 @@
                         <dl
                             class=" grid max-w-screen-xl grid-cols-2 gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-3 xl:grid-cols-6 dark:text-white sm:p-8">
                             <div class="flex flex-col items-center justify-center">
-                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">16k+</dt>
-                                <dd class="text-center text-white">Server Members</dd>
+                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">11k+</dt>
+                                <dd class="text-center text-white">Mitglieder</dd>
                             </div>
                             <div class="flex flex-col items-center justify-center">
-                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">175+</dt>
-                                <dd class="text-center text-white">Paying Subscribers</dd>
-                            </div>
-                            <div class="flex flex-col items-center justify-center">
-                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">23k+</dt>
-                                <dd class="text-center text-white">Servers</dd>
+                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">150+</dt>
+                                <dd class="text-center text-white">Premium Mitglieder</dd>
                             </div>
                             <div class="flex flex-col items-center justify-center">
                                 <dt class="text-center mb-2 text-3xl text-white font-extrabold">50k+</dt>
-                                <dd class="text-center text-white">Active Users</dd>
+                                <dd class="text-center text-white">Gespräche
+                                </dd>
                             </div>
                             <div class="flex flex-col items-center justify-center">
-                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">60k+</dt>
-                                <dd class="text-center text-white">Conversations</dd>
+                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">6</dt>
+                                <dd class="text-center text-white">Moderatoren</dd>
                             </div>
                             <div class="flex flex-col items-center justify-center">
-                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">500k+</dt>
-                                <dd class="text-center text-white">Users</dd>
+                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">21k+</dt>
+                                <dd class="text-center text-white">Servers</dd>
+                            </div>
+                            <div class="flex flex-col items-center justify-center">
+                                <dt class="text-center mb-2 text-3xl text-white font-extrabold">40+</dt>
+                                <dd class="text-center text-white">Wähler</dd>
                             </div>
                         </dl>
                     </div>
@@ -954,7 +988,7 @@
             <hr>
         </section>
         <h1 style="margin-top: 200px;"
-            class="tracking-tight font-extrabold text-center text-5xl text-gray-900 dark:text-white">Our Subscriptions
+            class="tracking-tight font-extrabold text-center text-5xl text-gray-900 dark:text-white">Unsere Abonnements
         </h1>
         <section class="subscriptions">
             <div
@@ -968,53 +1002,53 @@
                     <span class="grid gap-2">
                         <h5 class="text-5xl text-center pl-4 font-semibold tracking-tight tex text-white">
                             Basic</h5>
-                        <p class="text-center text-2xl text-white">Basic ChatGPT plan
+                        <p class="text-center text-2xl text-white">Grundlegender ChatGPT-Plan
                         </p>
                     </span>
                     <div class="flex items-center justify-between">
                         <span class="grid gap-2 mt-6">
                             <h5 class="text-3xl font-bold tex text-white">$3.99</h5>
-                            <p class=" text-lg font-medium text-white">PER MONTH</p>
+                            <p class=" text-lg font-medium text-white">PRO MONAT</p>
                         </span>
                     </div>
                     <div class="grid mt-8">
-                        <h5 class="text-lg font-bold text-white pl-2">MEMBER COLOR & BADGE</h5>
+                        <h5 class="text-lg font-bold text-white pl-2">FARBE UND ABZEICHEN DES MITGLIEDS</h5>
                         <div
                             class="mt-2 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <h5 class="flex items-center gap-2 mb-2 text-2xl font-medium tracking-tight text-black"><img
-                                    src="static/img/small_logo.png" class="rounded-full" width="40px" height="40px"
-                                    alt="..."> Subscriber <img
+                                    src="static/img/discord-avatar.png" class="rounded-full" width="40px" height="40px"
+                                    alt="..."> Abonnenten <img
                                     src="https://media.discordapp.net/attachments/1101297285196951612/1112016248734220441/black-openai.png?width=25&height=25"
                                     alt="..."></h5>
                             <p class="font-normal text-black dark:text-white"
-                                style="font-family: 'Noto Sans'; padding-left: 45px;">wow, my
-                                nickname stands out in the
-                                chat!</p>
+                                style="font-family: 'Noto Sans'; padding-left: 45px;">wow, mein Spitzname fällt im Chat
+                                auf!</p>
 
                         </div>
-                        <h5 class="text-lg font-bold text-white pl-2 mt-6">EXCLUSIVE CHANNELS</h5>
+                        <h5 class="text-lg font-bold text-white pl-2 mt-6">EXKLUSIVE KANÄLE</h5>
                         <p class="text-white pl-2 text-lg mt-2"># 🤑subscribers-only</p>
-                        <p class="text-gray-700 text-white pl-2 text-md">Chat with other subscribers</p>
+                        <p class="text-gray-700 text-white pl-2 text-md">Chatten Sie mit anderen Abonnenten</p>
                         <p class="text-white pl-2 text-lg"># 🆕emoji-request</p>
-                        <p class="text-gray-700 text-white pl-2 text-md">Request emoji to be added to the server
+                        <p class="text-gray-700 text-white pl-2 text-md">Fordern Sie das Hinzufügen von Emojis zum
+                            Server an
                         </p>
                         <div class="bg-gray-400 dark:bg-gray-700 mt-4" style="height: 1px; width: 100%;"></div>
-                        <h5 class="text-lg font-bold text-white pl-2 mt-6">ADDITIONAL BENEFITS
+                        <h5 class="text-lg font-bold text-white pl-2 mt-6">ZUSÄTZLICHE VORTEILE
                         </h5>
-                        <p class="text-white pl-2 text-lg mt-2">🔓 GPT-4 Access</p>
-                        <p class="text-gray-700 text-white pl-2 text-md">Access to All-new GPT-4 by OpenAI</p>
-                        <p class="text-white pl-2 text-lg mt-2">💵 25,000 credits/month</p>
-                        <p class="text-gray-700 text-white pl-2 text-md">25,000 credits per month</p>
-                        <p class="text-white pl-2 text-lg mt-2">🔐 Private Conversations in DMs</p>
-                        <p class="text-gray-700 text-white pl-2 text-md">Unlock private conversations in DMs and
-                            using /chatprivate in servers.</p>
+                        <p class="text-white pl-2 text-lg mt-2">🔓 GPT-4 Zugang</p>
+                        <p class="text-gray-700 text-white pl-2 text-md">Zugriff auf das brandneue GPT-4 von OpenAI</p>
+                        <p class="text-white pl-2 text-lg mt-2">💵 25.000 Credits/Monat</p>
+                        <p class="text-gray-700 text-white pl-2 text-md">25.000 Credits pro Monat</p>
+                        <p class="text-white pl-2 text-lg mt-2">🔐 Private Gespräche in Direktnachrichten</p>
+                        <p class="text-gray-700 text-white pl-2 text-md">Schalten Sie private Gespräche in DMs frei und
+                            Verwendung von /chatprivate auf Servern.</p>
                         <div class="bg-gray-400 dark:bg-gray-700 mt-4" style="height: 1px; width: 100%;"></div>
                         <h5 class="text-lg font-bold text-white pl-2 mt-6">+6 EMOJI</h5>
                     </div>
                 </div>
                 <a type="button" href="https://discord.com/channels/1092173065967911002/1093697929375645776"
                     class="inline-flex items-center justify-center text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm text-center mr-2 mb-2"
-                    style="font-family: 'Montserrat'; margin-bottom: 15px; margin-left: 100px; padding: 15px 60px;">Subscribe</a>
+                    style="font-family: 'Montserrat'; margin-bottom: 15px; margin-left: 100px; padding: 15px 60px;">Abonnieren</a>
             </div>
             <div
                 class="w-full max-w-sm bg-gradient-to-br from-green-400 to-cyan-600 border border-gray-200 rounded-lg shadow dark:border-gray-700">
@@ -1026,55 +1060,56 @@
                 <div class="px-5 pb-5">
                     <span class="grid gap-2">
                         <h5 class="text-5xl text-center pl-4 font-semibold tracking-tight tex text-white">
-                            Pro</h5>
-                        <p class="text-center text-2xl text-white">Pro ChatGPT access
+                            Profi</h5>
+                        <p class="text-center text-2xl text-white">Profi ChatGPT-Zugriff
                         </p>
                     </span>
                     <div class="flex items-center justify-between">
                         <span class="grid gap-2 mt-6">
                             <h5 class="text-3xl font-bold tex text-white">$8.99</h5>
-                            <p class=" text-lg font-medium text-white">PER MONTH</p>
+                            <p class=" text-lg font-medium text-white">PRO MONAT</p>
                         </span>
                     </div>
                     <div class="grid mt-8">
-                        <h5 class="text-lg font-bold text-white pl-2">MEMBER COLOR & BADGE</h5>
+                        <h5 class="text-lg font-bold text-white pl-2">FARBE UND ABZEICHEN DES MITGLIEDS</h5>
                         <div
                             class="mt-2 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <h5 class="flex items-center gap-2 mb-2 text-2xl font-medium tracking-tight text-green-400">
-                                <img src="static/img/small_logo.png" class="rounded-full" width="40px" height="40px"
-                                    alt="..."> Subscriber <img width="25px" height="25px"
+                                <img src="static/img/discord-avatar.png" class="rounded-full" width="40px" height="40px"
+                                    alt="..."> Abonnenten<img width="25px" height="25px"
                                     src="https://cdn.discordapp.com/attachments/1031244802588672030/1146418327800008784/chatgpt-logo-chat-gpt-icon-on-green-background-free-vector.png"
                                     alt="...">
                             </h5>
                             <p class="font-normal text-black dark:text-white"
-                                style="font-family: 'Noto Sans'; padding-left: 45px;">wow, my
-                                nickname stands out in the
-                                chat!</p>
+                                style="font-family: 'Noto Sans'; padding-left: 45px;">wow, mein Spitzname fällt im Chat
+                                auf!</p>
 
                         </div>
-                        <h5 class="text-lg font-bold text-white pl-2 mt-6">EXCLUSIVE CHANNELS</h5>
+                        <h5 class="text-lg font-bold text-white pl-2 mt-6">EXKLUSIVE KANÄLE</h5>
                         <p class="text-white pl-2 text-lg mt-2"># 🤑subscribers-only</p>
-                        <p class="text-gray-700 text-white pl-2 text-md">Chat with other subscribers</p>
+                        <p class="text-gray-700 text-white pl-2 text-md">Chatten Sie mit anderen Abonnenten</p>
                         <p class="text-white pl-2 text-lg"># 🆕emoji-request</p>
-                        <p class="text-gray-700 text-white pl-2 text-md">Request emoji to be added to the server
+                        <p class="text-gray-700 text-white pl-2 text-md">Fordern Sie das Hinzufügen von Emojis zum
+                            Server an
                         </p>
                         <div class="bg-gray-400 dark:bg-gray-700 mt-4" style="height: 1px; width: 100%;"></div>
-                        <h5 class="text-lg font-bold text-white pl-2 mt-6">ADDITIONAL BENEFITS
+                        <h5 class="text-lg font-bold text-white pl-2 mt-6">
+                            ZUSÄTZLICHE VORTEILE
                         </h5>
-                        <p class="text-white pl-2 text-lg mt-2">🔓 GPT-4 Access</p>
-                        <p class="text-gray-700 text-white pl-2 text-md">Access to All-new GPT-4 by OpenAI</p>
-                        <p class="text-white pl-2 text-lg mt-2">💵 100,000 credits/month</p>
-                        <p class="text-gray-700 text-white pl-2 text-md">100,000 credits per month</p>
-                        <p class="text-white pl-2 text-lg mt-2">🔐 Private Conversations in DMs</p>
-                        <p class="text-gray-700 text-white pl-2 text-md">Unlock private conversations in DMs and
-                            using /chatprivate in servers.</p>
+                        <p class="text-white pl-2 text-lg mt-2">🔓 GPT-4 Zugriff</p>
+                        <p class="text-gray-700 text-white pl-2 text-md">Zugriff auf das brandneue GPT-4 von OpenAI</p>
+                        <p class="text-white pl-2 text-lg mt-2">💵 100,000 credits/monat</p>
+                        <p class="text-gray-700 text-white pl-2 text-md">100.000 Credits pro monat</p>
+                        <p class="text-white pl-2 text-lg mt-2">🔐 Private Gespräche in Direktnachrichten</p>
+                        <p class="text-gray-700 text-white pl-2 text-md">Schalten Sie private Gespräche in DMs frei und
+                            Verwendung von /chatprivate auf Servern.</p>
                         <div class="bg-gray-400 dark:bg-gray-700 mt-4" style="height: 1px; width: 100%;"></div>
                         <h5 class="text-lg font-bold text-white pl-2 mt-6">+7 EMOJI</h5>
                     </div>
                 </div>
                 <a type="button" href="https://discord.com/channels/1092173065967911002/1093697929375645776"
                     class="inline-flex items-center justify-center text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm text-center mr-2 mb-2"
-                    style="font-family: 'Montserrat'; margin-bottom: 15px; margin-left: 100px; padding: 15px 60px;">Subscribe</a>
+                    style="font-family: 'Montserrat'; margin-bottom: 15px; margin-left: 100px; padding: 15px 60px;">Abonnieren</a>
             </div>
             <div
                 class="w-full ultra max-w-sm bg-gradient-to-r from-purple-500 to-pink-500 border border-gray-200 rounded-lg shadow dark:border-gray-700">
@@ -1087,8 +1122,8 @@
                     <span class="grid gap-2">
                         <h5 class="text-5xl text-center pl-4 font-semibold tracking-tight tex text-white">
                             Ultra</h5>
-                        <p class="text-center text-white text-2xl text-gray-300">Ultra access for
-                            ChatGPT access - BEST VALUE
+                        <p class="text-center text-white text-2xl text-gray-300">
+                            Ultra-Zugriff für ChatGPT-Zugriff – BESTER PREIS
                         </p>
                     </span>
                     <div class="flex items-center mt-2.5 mb-5 pl-2">
@@ -1097,56 +1132,57 @@
                     <div class="flex items-center justify-between">
                         <span class="grid gap-2">
                             <h5 class="text-3xl font-bold tex text-white">$19.99</h5>
-                            <p class="text-white text-lg font-medium">PER MONTH</p>
+                            <p class="text-white text-lg font-medium">PER MONAT</p>
                         </span>
                     </div>
                     <div class="grid mt-8">
-                        <h5 class="text-lg font-bold text-white pl-2">MEMBER COLOR & BADGE</h5>
+                        <h5 class="text-lg font-bold text-white pl-2">FARBE UND ABZEICHEN DES MITGLIEDS</h5>
                         <div
                             class="mt-2 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <h5 class="flex items-center gap-2 mb-2 text-2xl font-medium tracking-tight"
-                                style="color: #ff2dab;"><img class="rounded-full" src="static/img/small_logo.png"
-                                    width="40px" height="40px" alt="..."> Subscriber <img
+                                style="color: #ff2dab;"><img src="static/img/discord-avatar.png" class="rounded-full"
+                                    width="40px" height="40px" alt="..."> Abonnenten <img
                                     src="https://media.discordapp.net/attachments/1101297285196951612/1112016248998469632/color-openai.png?width=25&height=25"
                                     alt="..."></h5>
                             <p class="font-normal text-black dark:text-white"
-                                style="font-family: 'Noto Sans'; padding-left: 45px;">wow, my
-                                nickname stands out in the
-                                chat!</p>
+                                style="font-family: 'Noto Sans'; padding-left: 45px;">wow, my nickname stands out in the
+                                chat!
+                            </p>
 
                         </div>
-                        <h5 class="text-lg font-bold text-white pl-2 mt-6">EXCLUSIVE CHANNELS</h5>
+                        <h5 class="text-lg font-bold text-white pl-2 mt-6">EXKLUSIVE KANÄLE</h5>
                         <p class=" text-white pl-2 text-lg mt-2"># 🔏ultra-membersers-only</p>
-                        <p class="text-white pl-2 text-md">Talk and use ChatGPT with other
-                            subscribers</p>
+                        <p class="text-white pl-2 text-md">Sprechen und nutzen Sie ChatGPT mit anderen
+                            Abonnenten</p>
                         <p class=" text-white pl-2 text-lg mt-2"># 🧪ultra-beta-testing</p>
-                        <p class="text-white pl-2 text-md">beta test the newest features of our
-                            bot and ChatGPT!</p>
+                        <p class="text-white pl-2 text-md">Testen Sie die neuesten Funktionen unseres Betatests
+                            Bot und ChatGPT!</p>
                         <p class=" text-white pl-2 text-lg mt-2"># 🤑subscribers-only</p>
-                        <p class="text-white pl-2 text-md">Chat with other subscribers</p>
+                        <p class="text-white pl-2 text-md">Chatten Sie mit anderen Abonnenten</p>
                         <p class=" text-white pl-2 text-lg mt-2"># 🆕emoji-request</p>
-                        <p class="text-white pl-2 text-md">Request emoji to be added to the server
+                        <p class="text-white pl-2 text-md">Fordern Sie das Hinzufügen von Emojis zum Server an
                         </p>
                         <div class="b bg-gray-400 mt-4" style="height: 1px; width: 100%;"></div>
-                        <h5 class="text-lg font-bold text-white pl-2 mt-6">ADDITIONAL BENEFITS
+                        <h5 class="text-lg font-bold text-white pl-2 mt-6">
+                            ZUSÄTZLICHE VORTEILE
                         </h5>
-                        <p class=" text-white pl-2 text-lg mt-2">🔓 GPT-4 Access</p>
-                        <p class="text-white pl-2 text-md">Access to All-new GPT-4 by OpenAI</p>
-                        <p class=" text-white pl-2 text-lg mt-2">💵 200,000 credits/month</p>
-                        <p class="text-white pl-2 text-md">200,000 credits per month</p>
-                        <p class="text-white pl-2 text-lg mt-2">🔐 Private Conversations in DMs</p>
-                        <p class="text-white pl-2 text-md">Unlock private conversations in DMs and
-                            using /chatprivate in servers.</p>
-                        <p class=" text-white pl-2 text-lg mt-2">📞 Priority support</p>
-                        <p class="text-white pl-2 text-md">Priority support in DMs and in forum
-                            channels - your feature will be the first to be implemented</p>
+                        <p class=" text-white pl-2 text-lg mt-2">🔓 GPT-4 Zugriff</p>
+                        <p class="text-white pl-2 text-md">Zugriff auf das brandneue GPT-4 von OpenAI</p>
+                        <p class=" text-white pl-2 text-lg mt-2">💵 200,000 credits/monat</p>
+                        <p class="text-white pl-2 text-md">200,000 credits pro monat</p>
+                        <p class="text-white pl-2 text-lg mt-2">🔐 Private Gespräche in Direktnachrichten</p>
+                        <p class="text-white pl-2 text-md">Schalten Sie private Gespräche in DMs frei und Verwendung von
+                            /chatprivate auf Servern.</p>
+                        <p class=" text-white pl-2 text-lg mt-2">📞 Vorrangiger Support</p>
+                        <p class="text-white pl-2 text-md">Vorrangiger Support in Direktnachrichten und im Forum
+                            Kanäle - Ihr Feature wird als erstes implementiert</p>
                         <p class=" text-white pl-2 text-lg mt-2">⏩ Beta </p>
-                        <p class="text-white pl-2 text-md">Get early access to Beta testing in our
-                            (and in OpenAi's) newest features and models.</p>
-                        <p class=" text-white pl-2 text-lg mt-2">🦾 Priority Access</p>
-                        <p class="text-white pl-2 text-md">You will get a priority access over others during times of
-                            high
-                            load, such as if OpenAI starts ratelimiting us
+                        <p class="text-white pl-2 text-md">Erhalten Sie frühzeitig Zugang zu Betatests in unserem
+                            (und in OpenAis) neuesten Funktionen und Modellen.</p>
+                        <p class=" text-white pl-2 text-lg mt-2">🦾 Vorrangiger Zugriff</p>
+                        <p class="text-white pl-2 text-md">In Zeiten von haben Sie Vorrang vor anderen
+                            hoch
+                            Last, beispielsweise wenn OpenAI anfängt, uns zu begrenzen
                         </p>
                         <div class="b bg-gray-400 mt-4" style="height: 1px; width: 100%;"></div>
                         <h5 class="text-lg font-bold text-white pl-2 mt-6">+8 EMOJI</h5>
@@ -1155,11 +1191,11 @@
                 <a type="button" href="https://discord.com/channels/1092173065967911002/1093697929375645776"
                     class="inline-flex items-center justify-center text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
                     style="
-                    font-family: 'Montserrat' ; margin-bottom: 15px; margin-left: 100px; padding: 15px 60px;">Subcribe</a>
+                    font-family: 'Montserrat' ; margin-bottom: 15px; margin-left: 100px; padding: 15px 60px;">Abonnieren</a>
             </div>
         </section>
         <section style="margin-top: 600px;">
-            <h5 style="margin-bottom: 100px;" class="text-5xl font-bold tracking-tight text-center gradient-text">Our
+            <h5 style="margin-bottom: 100px;" class="text-5xl font-bold tracking-tight text-center gradient-text">Unser
                 Premium</h5>
             <div style="margin: auto;"
                 class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
@@ -1169,20 +1205,22 @@
                         style="margin: auto; max-width: 250px; width: 100%; height: auto;" alt="" />
                 </a>
                 <div class="p-5">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-center gradient-text">Server Premium</h5>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Buy Server Premium and give subscriber benefits to everyone in a server for cheap!</p>
+                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-center gradient-text">Premium-Kategorie</h5>
+                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Premium-Rolle auf unserem Server ist
+                        der Wert
+                        für diejenigen, die sich für ein Sponsoring angemeldet haben (Basic, Pro, Ultra)</p>
                     <div class="grid mt-8">
-                        <h5 class="text-lg font-bold text-gray-500 dark:text-white pl-2 text-center">BENEFITS</h5>
+                        <h5 class="text-lg font-bold text-gray-500 dark:text-white pl-2 text-center">VORTEILE</h5>
                         <p class="mt-4 font-bold text-gray-600 dark:text-white pl-2 text-md"
-                            style="font-family: 'Montserrat';">1. Premium Models and Personalities</p>
+                            style="font-family: 'Montserrat';">1. Zugriff auf die einzigartigen Kanäle</p>
                         <p class="font-bold text-gray-600 dark:text-white pl-2 text-md"
-                            style="font-family: 'Montserrat';">2. Editable Bot Nickname</p>
+                            style="font-family: 'Montserrat';">2. Alltägliche Credits für die Verwendung von KI</p>
                         <p class="font-bold text-gray-600 dark:text-white pl-2 text-md"
-                            style="font-family: 'Montserrat';">3. Premium Support</p>
+                            style="font-family: 'Montserrat';">3. Zugriff auf die Premium AI-Modelle</p>
                         <p class="font-bold text-gray-600 dark:text-white pl-2 text-md"
-                            style="font-family: 'Montserrat';">4. No Advertisements</p>
+                            style="font-family: 'Montserrat';">4. Alles, was oben geschrieben steht</p>
                     </div>
-                    <a href="discord"
+                    <a href="#"
                         class="mt-8 relative inline-flex items-center justify-center px-0.5 py-0.5 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-500 to-pink-500 group-hover:from-purple-500 group-hover:to-pink-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800">
                         <span style="font-family: 'Montserrat';"
                             class="relative font-bold py-2.5 px-5 transition-all ease-in duration-75 bg-white dark:bg-gray-800 rounded-md group-hover:bg-opacity-0">
@@ -1201,36 +1239,37 @@
                     <a href="https://geneplore.com/" class="flex items-center">
                         <img src="static/img/geneplore.png" class="geneplore2 mr-3" alt="logo" />
                     </a>
-                    <p class="text-gray-600 text-lg dark:text-gray-400" style="width: 300px;">Geneplore - The world's
-                        easiest way to use AI in 2023</p>
+                    <p class="text-gray-600 text-lg dark:text-gray-400" style="width: 300px;">Geneplore – Die Welt
+                        einfachste Möglichkeit, KI ab 2023 zu nutzen</p>
                 </div>
                 <div class="grid grid-cols-2 gap-6 sm:gap-6 sm:grid-cols-3">
                     <div>
-                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Menu</h2>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">SPEISEKARTE</h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
                             <li class="mb-4">
-                                <a href="index.html" class="und-link">Home</a>
+                                <a href="index.html" class="und-link">Heim</a>
                             </li>
                             <li class="mb-4">
-                                <a href="#" class="und-link">About us</a>
+                                <a href="#" class="und-link">Über uns</a>
                             </li>
                             <li class="mb-4">
-                                <a href="#" class="und-link">Services</a>
+                                <a href="#" class="und-link">Dienstleistungen</a>
                             </li>
                             <li>
-                                <a href="https://geneplore.readme.io/reference/start" class="hover:underline">More</a>
+                                <a href="https://geneplore.readme.io/reference/start" class="hover:underline">Mehr</a>
                             </li>
                         </ul>
                     </div>
                     <div>
-                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Folgen Sie uns
+                        </h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
                             <li class="mb-4">
                                 <a href="https://github.com/GeneploreAI/geneplore.com"
                                     class="und-link ">Github</a>
                             </li>
                             <li>
-                                <a href="discord" class="und-link">Discord</a>
+                                <a href="/discord" class="und-link">Discord</a>
                             </li>
                         </ul>
                     </div>
@@ -1238,12 +1277,10 @@
                         <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
                         <ul class="text-gray-500 dark:text-gray-400 font-medium">
                             <li class="mb-4">
-                                <a href="terms.html" class="und-link">Privacy
-                                    Policy</a>
+                                <a href="/terms.html" class="und-link">Datenschutzrichtlinie</a>
                             </li>
                             <li>
-                                <a href="terms.html" class="und-link">Terms
-                                    &amp; Conditions</a>
+                                <a href="/terms.html" class="und-link">Terms &amp; Bedingungen</a>
                             </li>
                         </ul>
                     </div>
@@ -1253,7 +1290,7 @@
             <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
             <div class="sm:flex sm:items-center sm:justify-between">
                 <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
-                        href="https://geneplore.com/" class="hover:underline">Geneplore</a>. All Rights Reserved.
+                        href="https://geneplore.com/" class="hover:underline">Geneplore</a>. Alle Rechte vorbehalten.
                 </span>
                 <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
 
@@ -1268,7 +1305,7 @@
                         <span class="sr-only">GitHub community</span>
                     </a>
                     <a class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
-                        href="discord">
+                        href="/discord">
                         <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
                             viewBox="0 0 21 16">
                             <path
