@@ -458,6 +458,9 @@ hr {
   border: none;
   
 }
+.hero-btn:hover {
+  cursor:pointer;
+}
 
 .outline-circle {
   background: #00000000;
