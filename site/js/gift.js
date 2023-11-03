@@ -45,6 +45,10 @@ function init() {
     } else if (urlParams.has('code')) {
         code = urlParams.get('state');
         redeem();
+    } else {
+        document.getElementById("mutableTitle").innerHTML = "We ran into an error. Please try again later.";
+        mutableText.innerHTML = "The link is invalid.";
+        signinButton.style.display = "none";
     }
 }
 

@@ -460,6 +460,8 @@ hr {
 }
 .hero-btn:hover {
   cursor:pointer;
+  transition: .5s ease-in-out;
+  box-shadow: inset 0 300px 0 0 #765dc7;
 }
 
 .outline-circle {
@@ -477,3 +479,10 @@ hr {
     display: none;
   }
 }
+
+.tllogo { 
+	position:fixed; 
+	top:15px; 
+	left:15px; 
+  width: 20%;
+} 
