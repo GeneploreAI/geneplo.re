@@ -30,6 +30,7 @@ function redeem() {
         if (xhr.readyState != 4) {
             document.getElementById("mutableTitle").innerHTML = "Redeemed!";
             mutableText.innerHTML = xhr.responseText;
+            signinButton.style.display = "none";
         }
         if (xhr.status != 200) {
             mutableText.innerHTML = xhr.responseText;
@@ -45,6 +46,9 @@ function init() {
     } else if (urlParams.has('code')) {
         code = urlParams.get('state');
         redeem();
+    } else if (urlParams.has("error")) {
+        document.getElementById("mutableTitle").innerHTML = "We ran into an error. Please try again later.";
+        mutableText.innerHTML = urlParams.get("error");
     } else {
         document.getElementById("mutableTitle").innerHTML = "We ran into an error. Please try again later.";
         mutableText.innerHTML = "The link is invalid.";
