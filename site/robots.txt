@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+User-agent: *
+Disallow: /gift
+
+Sitemap: https://geneplore.com/sitemap.xml
