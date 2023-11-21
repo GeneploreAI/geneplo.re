@@ -1,0 +1,512 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes introduction {
+  0% {
+    left: 0;
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+body {
+  max-width: 1440px;
+  width: 100%;
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+main {
+  position: relative;
+  animation-name: introduction;
+  animation-timing-function: ease;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+footer {
+  position: relative;
+  animation-name: introduction;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+}
+
+hr {
+  background: white;
+}
+
+.light-mode>hr {
+  background: gray;
+}
+
+.dark {
+  margin-right: -50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 80%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #ff480bec;
+  border: 5px solid #ff8811;
+}
+
+.light {
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 80%;
+  border: 5px solid grey;
+  box-shadow: inset 0 80px 60px rgba(0, 0, 0, 0.1), inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+  z-index: -1;
+  transition: 1.5s;
+}
+
+.checkbox:checked~.light {
+  background: #fff;
+}
+
+.checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.sunny {
+  position: absolute;
+  transform: scale(0);
+  font-size: 30px;
+  color: #ffffff;
+  transition: 1.5s ease;
+}
+
+.checkbox:checked~.sunny {
+  transform: scale(1) rotate(360deg);
+}
+
+.moon {
+  font-size: 30px;
+  color: #ffffff;
+  transition: 1.5s ease;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+}
+
+.checkbox:checked~.moon {
+  transition-delay: 0s;
+  transform: rotate(360deg) scale(0);
+}
+
+.animateBg {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: #090615;
+  z-index: -2;
+  -webkit-clip-path: circle(0% at 50% 50%);
+  clip-path: circle(0% at 50% 50%);
+  transition: 1.5s ease;
+}
+
+.checkbox:checked~.animateBg {
+  -webkit-clip-path: circle(150% at 50% 50%);
+  clip-path: circle(150% at 50% 50%);
+}
+
+.nav_menu {
+  display: flex;
+  align-items: center;
+  margin-left: -50px;
+  gap: 10px;
+}
+
+.nav_li {
+  list-style: none;
+  padding: 10px;
+}
+
+.nav-home {
+  display: block;
+  padding-top: 2;
+  padding-left: 3px;
+  padding-right: 4px;
+  display: inline-block;
+  font-family: 'Hind Siliguri';
+  font-weight: 600;
+  color: #e46e0e;
+  border-radius: 1px;
+  text-decoration: none;
+  background: linear-gradient(to right, #e4200a, #f05907);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 100% 3px;
+}
+
+.nav_link {
+  display: block;
+  padding-top: 2px;
+  padding-left: 3px;
+  padding-right: 4px;
+  color: grey;
+  font-family: "Hind Siliguri";
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
+  background: linear-gradient(to right, #e4200a, #f05907);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 0% 3px;
+  transition: background-size 1s ease;
+}
+
+.nav_link:hover {
+  color: #e9690e;
+  background-size: 100% 3px;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  display: block;
+  color: grey;
+  font-family: "Hind Siliguri";
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
+  background: #00000000;
+  border: none;
+}
+
+.dropbtn:hover {
+  color: #e9690e;
+}
+
+.dropdown-content {
+  margin: auto;
+  display: none;
+  position: absolute;
+  margin-top: 1px;
+  background-color: #ffcb8c;
+  width: 100%;
+  height: 300px;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+  transition: 1s ease;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding-left: 20px;
+  height: 300px;
+}
+
+.column a {
+  float: none;
+  color: #ffffff;
+  font-family: 'Noto Sans';
+  font-weight: 600;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.column h3 {
+  float: none;
+  color: #ff3300;
+  font-family: 'Roboto Slab';
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.column a:hover {
+  background-color: #ffe58f;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.und-link {
+  display: block;
+  display: inline-flex;
+  text-decoration: none;
+  background: linear-gradient(to right, #f1591d, #f7b21e);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 0% 4px;
+  transition: background-size 0.5s ease;
+}
+
+.und-link:hover {
+  color: #ed790d;
+  background-size: 100% 4px;
+}
+
+.svg-icon {
+  width: 25px;
+  height: 25px;
+  color: #e9690e;
+}
+
+.link-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: -100px;
+}
+
+.logo {
+  max-width: 300px;
+  margin-right: -20px;
+}
+
+/* .btn-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: -120px;
+}
+
+.login {
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 30px;
+  font-family: "Hind Siliguri";
+  font-weight: 500;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  background: #fead21;
+  border: none;
+  z-index: 1;
+}
+
+.login:after {
+  color: #FFF;
+  border: 2px solid rgb(255, 84, 41);
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: 'Hind Siliguri';
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #D80286;
+  transition: ease-out 1s;
+}
+
+.login:hover {
+  transition: 1s ease-in-out;
+  box-shadow: inset 400px 0 0 0 #d80202;
+}
+
+.signup {
+  margin-right: -120px;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 30px;
+  font-family: "Hind Siliguri";
+  font-weight: 500;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  background: #fe7921;
+  border: none;
+  z-index: 1;
+}
+
+.signup:after {
+  color: #FFF;
+  border: 2px solid rgb(216, 45, 2);
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: 'Hind Siliguri';
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #D80286;
+  transition: ease-out 1s;
+}
+
+.signup:hover {
+  transition: 1s ease-in-out;
+  box-shadow: inset 400px 0 0 0 #d80202;
+} */
+
+.default-btn {
+  margin-right: -110px;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 30px;
+  font-family: 'Noto Sans';
+  font-weight: 500;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: #fe7921;
+  border: none;
+  z-index: 1;
+}
+
+.default-btn:hover {
+  transition: 1s ease-in-out;
+  box-shadow: inset 0 300px 0 0 #d80202;
+}
+
+.hero-section {
+  margin-top: 50px;
+  gap: 50px;
+  margin-left: 20px;
+
+}
+.outline-circle {
+  display: none;
+}
+
+.tllogo { 
+	position:fixed; 
+	top:15px; 
+	left:15px; 
+  width: 120px;
+} 
+
+@media screen and (min-width: 1050px) {
+  .hero-section {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+  }
+  .tllogo { 
+    position:fixed; 
+    top:15px; 
+    left:15px; 
+    width: 300px;
+  } 
+  .outline-circle {
+    background: #00000000;
+    border: 25px solid #ffaa00a9;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: -400px;
+    margin-left: -50px;
+  }
+}
+
+
+
+.hero-list {
+  display: grid;
+  row-gap: 20px;
+}
+
+.hero-title {
+  font-family: 'Hind Siliguri';
+  font-weight: 500;
+  font-size: 50px;
+  width: 400px;
+  line-height: 50px;
+  color: #25275a;
+}
+
+.hero-title span {
+  font-weight: 600;
+  font-family: 'Hind Siliguri';
+  color: #4940a7;
+}
+
+.hero-text {
+  font-family: 'Noto Sans';
+  font-weight: normal;
+  width: 500px;
+  color: gray;
+  font-size: larger;
+}
+
+.hero-img {
+  max-width: 500px;
+  height: auto;
+}
+
+
+
+.hero-btn {
+  width: 250px;
+  padding: 17px 20px;
+  text-align: center;
+  color: white;
+  font-family: 'Noto Sans';
+  font-weight: 500px;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 60px;
+  background: #6439b8;
+  border: none;
+  
+}
+.hero-btn:hover {
+  cursor:pointer;
+  transition: .5s ease-in-out;
+  box-shadow: inset 0 300px 0 0 #765dc7;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .nav_menu {
+    display: none;
+  }
+}
+
