@@ -19,6 +19,10 @@
       {
         "source": "/gift",
         "destination": "/gift.html"
+      },
+      {
+        "source": "/success",
+        "destination": "/success.html"
       }
     ],
     "redirects":
