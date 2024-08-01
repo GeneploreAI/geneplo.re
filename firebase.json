@@ -31,16 +31,6 @@
     "redirects":
     [
       {
-        "source": "/discord",
-        "destination": "https://discord.gg/RsztF7QRp7",
-        "type": 301
-      },
-      {
-        "source": "/bot",
-        "destination": "https://discord.com/application-directory/1089317211652509811",
-        "type": 301
-      },
-      {
         "source": "/terms",
         "destination": "https://geneplore.com/terms",
         "type": 301
