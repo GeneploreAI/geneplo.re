@@ -21,6 +21,10 @@
         "destination": "/success.html"
       },
       {
+        "source": "/static/hosted/bot-img/bot-logo.jpg",
+        "destination": "/static/hosted/bot-img/bot-logo.png"
+      },
+      {
         "source": "/*",
         "function": {
           "functionId": "link-shortener",
