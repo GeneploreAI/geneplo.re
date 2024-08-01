@@ -57,5 +57,5 @@ function init() {
 }
 
 function signin() {
-    window.open("https://discord.com/api/oauth2/authorize?client_id=1089317211652509811&redirect_uri=https%3A%2F%2Fgeneplore.com%2Fgift&response_type=code&scope=identify&state=" + code, "_self")
+    window.open("https://discord.com/api/oauth2/authorize?client_id=1089317211652509811&redirect_uri=https%3A%2F%2Fgeneplo.re%2Fgift&response_type=code&scope=identify&state=" + code, "_self")
 }

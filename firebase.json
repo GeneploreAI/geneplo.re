@@ -19,6 +19,13 @@
       {
         "source": "/success",
         "destination": "/success.html"
+      },
+      {
+        "source": "/*",
+        "function": {
+          "functionId": "link-shortener",
+          "region": "us-central1"
+        }
       }
     ],
     "redirects":
@@ -43,7 +50,6 @@
         "destination": "https://geneplore.com",
         "type": 301
       }
-      
     ]
   }
 
