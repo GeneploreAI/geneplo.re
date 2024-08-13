@@ -43,7 +43,18 @@
         "source": "/",
         "destination": "https://geneplore.com",
         "type": 301
+      },
+      {
+        "source": "/discord",
+        "destination": "https://discord.com/invite/RsztF7QRp7",
+        "type": 301
+      },
+      {
+        "source": "/bot",
+        "destination": "https://discord.com/oauth2/authorize?client_id=1089317211652509811",
+        "type": 301
       }
+      
     ]
   }
 
