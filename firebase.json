@@ -21,6 +21,10 @@
         "destination": "/success.html"
       },
       {
+        "source": "success-pre",
+        "destination": "/success-pre.html"
+      },
+      {
         "source": "/static/hosted/bot-img/bot-logo.jpg",
         "destination": "/static/hosted/bot-img/bot-logo.png"
       },
